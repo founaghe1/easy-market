@@ -1,0 +1,73 @@
+.banner{
+    background-color: rgba(251, 75, 6, 0.814);
+    /* height: 600px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.btn{
+    border: 1px solid rgb(255, 255, 255);
+    background:#ef78289f ;
+}
+.btn:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
+.pull{
+    width: 88%;
+}
+.sect1Ico{
+    width: 130px;
+    height: 130px;
+    border: 2px solid rgba(128, 128, 128, 0.537);
+}
+
+
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
+.card{
+    border-radius: 23px;
+}
+
+.testi{
+    background-color: rgb(255, 255, 255);
+}
+
+.voirplus{
+    border: none;
+    background-color: rgba(206, 206, 206, 0.082);
+}
+.princip{
+    background-color: rgba(206, 206, 206, 0.144);
+}
