@@ -1,12 +1,12 @@
 .banner{
-    background-color: rgba(251, 75, 6, 0.814);
+    background-color: #e66e1fe2;
     /* height: 600px; */
     padding-top: 100px;
     padding-bottom: 100px;
 }
 .btn{
     border: 1px solid rgb(255, 255, 255);
-    background:#ef78289f ;
+    background:#f59e6461 ;
 }
 .btn:hover{
     border: 1px solid rgb(255, 255, 255);
@@ -71,3 +71,52 @@
 .princip{
     background-color: rgba(206, 206, 206, 0.144);
 }
+
+/* newsletter */
+.search {
+    display: inline-block;
+    position: relative;
+
+  }
+  
+  .search input[type="text"] {
+    width: 90% !important;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search button[type="submit"] {
+    background-color: #d45e14;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -3px;
+    right: 90px;
+    transition: .9s ease;
+  }
+  
+  .search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 94, 0);
+  }
+
+  .newsletterC{
+    background-color: #d45e1414;
+  }
+
+  @media screen and (max-width: 520px) {
+    .search button[type="submit"] {
+        
+        right: 60px;
+    }
+    .btn{
+        margin-bottom: 15px;
+    }
+  }
+  

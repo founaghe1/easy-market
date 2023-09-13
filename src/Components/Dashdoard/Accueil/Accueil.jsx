@@ -7,6 +7,7 @@ import { IoIosMan } from "react-icons/io";
 import { ImWoman } from "react-icons/im";
 import { BiChild } from "react-icons/bi";
 import { PiWatchDuotone } from "react-icons/pi";
+import { GoPaperAirplane } from "react-icons/go";
 import chemise from "../../../Assets/chemise.png";
 import shose from "../../../Assets/shose.png";
 import parfum from "../../../Assets/parfum.png";
@@ -19,7 +20,7 @@ import montre from "../../../Assets/montre.png";
 import sac from "../../../Assets/sac.png";
 import shose2 from "../../../Assets/shose2.png";
 import quote from "../../../Assets/quote-up.png";
-import client from "../../../Assets/clienttesti.png"
+import client from "../../../Assets/clienttesti.png";
 
 const Accueil = () => {
   let items = document.querySelectorAll(".carousel .carousel-item");
@@ -60,7 +61,7 @@ const Accueil = () => {
         </div>
       </div>
       <div className="row section1 text-center pt-5">
-        <div className="col-md-3 col-sm-6">
+        <div className="col-md-3 col-sm-6 ">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <p className="fs-4">Hommes</p>
             <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
@@ -96,7 +97,8 @@ const Accueil = () => {
       </div>
 
       <div class="container pt-5">
-        <h1 className="text-center">Nouveautés du moments</h1><br/>
+        <h1 className="text-center">Nouveautés du moments</h1>
+        <br />
         <div class="row">
           <div class="col">
             <div class="container text-center my-3">
@@ -309,49 +311,82 @@ const Accueil = () => {
             </div>
           </div>
         </div>
-        <p className="text-end pe-5"><button className="voirplus fs-3 ">Voir plus</button></p>
+        <p className="text-end pe-5">
+          <button className="voirplus fs-3 ">Voir plus</button>
+        </p>
       </div>
 
       <div className="testimonial pb-5 px-3">
         <h1 className="text-center mt-4">Ce que dises nos clients</h1>
         <div className="row">
-            <div className="col-md-4 mt-3">
-                <div className="testi px-3 py-2 rounded">
-                    <img src={quote} alt="" />
-                    <p className="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.</p>
-                    <div>
-                        <p>
-                            <img src={client} alt="" />
-                            <span className="ms-2 fw-bold fs-5">Coper Toby</span>
-                        </p>
-                    </div>
-                </div>
+          <div className="col-md-4 mt-3">
+            <div className="testi px-3 py-2 rounded">
+              <img src={quote} alt="" />
+              <p className="fs-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati deleniti molestias vel eos laboriosam id, consectetur
+                sit similique esse soluta odit eligendi iste.
+              </p>
+              <div>
+                <p>
+                  <img src={client} alt="" />
+                  <span className="ms-2 fw-bold fs-5">Coper Toby</span>
+                </p>
+              </div>
             </div>
-            <div className="col-md-4 mt-3">
-                <div className="testi px-3 py-2 rounded">
-                    <img src={quote} alt="" />
-                    <p className="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.</p>
-                    <div>
-                        <p>
-                            <img src={client} alt="" />
-                            <span className="ms-2 fw-bold fs-5">Coper Toby</span>
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div className="col-md-4 mt-3">
+            <div className="testi px-3 py-2 rounded">
+              <img src={quote} alt="" />
+              <p className="fs-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati deleniti molestias vel eos laboriosam id, consectetur
+                sit similique esse soluta odit eligendi iste.
+              </p>
+              <div>
+                <p>
+                  <img src={client} alt="" />
+                  <span className="ms-2 fw-bold fs-5">Coper Toby</span>
+                </p>
+              </div>
             </div>
-            <div className="col-md-4 mt-3">
-                <div className="testi px-3 py-2 rounded">
-                    <img src={quote} alt="" />
-                    <p className="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.</p>
-                    <div>
-                        <p>
-                            <img src={client} alt="" />
-                            <span className="ms-2 fw-bold fs-5">Coper Toby</span>
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div className="col-md-4 mt-3">
+            <div className="testi px-3 py-2 rounded">
+              <img src={quote} alt="" />
+              <p className="fs-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati deleniti molestias vel eos laboriosam id, consectetur
+                sit similique esse soluta odit eligendi iste.
+              </p>
+              <div>
+                <p>
+                  <img src={client} alt="" />
+                  <span className="ms-2 fw-bold fs-5">Coper Toby</span>
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
+      <div className="newsletterC">
+      <div className="container-fluid  py-5 ">
+        <div className="row">
+          <div className="col-md-4 ps-5 ">
+            <h2 className="ms-md-5 ps-md-5">NEWSLETTER</h2>
+            <p className="ms-md-5 ps-md-5">Stay Up to Date</p>
+          </div>
+          <div className="col-md-8">
+            <div>
+              <div className="search w-100 px-5">
+                <input placeholder="Search..." type="text" className="py-3"/>
+                <button type="submit" className="rounded-circle"> <GoPaperAirplane className="fs-3"/> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   );

@@ -1,0 +1,11 @@
+.footer{
+    background: linear-gradient(160deg, rgb(245, 139, 25), rgb(148, 51, 3));
+}
+
+.ul{
+    list-style-type : none;
+}
+.ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
