@@ -44,7 +44,7 @@ const Accueil = () => {
       <div className="row banner mt-2">
         <div className="col-md-7">
           <div className="text-light ps-2 ps-md-5">
-            <h1 className="display-3 fw-bold">
+            <h1 className="display-3 fw-bold h1">
               Votre site e-commerce{" "}
               <span className="display-1 fw-bold">personnalisable</span>
             </h1>

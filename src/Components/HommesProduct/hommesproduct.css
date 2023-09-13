@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300&display=swap');
+.container-fluid{
+    padding: 0;
+    overflow-x: hidden;
+}
+.man{
+    color: rgb(255, 255, 255);
+}
+.spMan{
+    background-color: rgb(235, 77, 4);
+}
+.homm{
+    font-family: Inter;
+}
