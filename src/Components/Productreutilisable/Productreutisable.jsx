@@ -1,5 +1,5 @@
 import React from 'react';
-import sacamain from "../../Assets/sacamain.png";
+import chemise from "../../Assets/chemise.png";
 import parfum2 from "../../Assets/parfum2.png";
 import coca from "../../Assets/coca.png";
 import ceinture from "../../Assets/ceinture.png";
@@ -7,6 +7,7 @@ import shose1 from "../../Assets/shose1.png";
 import montre from "../../Assets/montre.png";
 import sac from "../../Assets/sac.png";
 import shose2 from "../../Assets/shose2.png";
+import { Link } from 'react-router-dom';
 
 const Productreutisable = () => {
   return (
@@ -17,13 +18,15 @@ const Productreutisable = () => {
           {/* <h1 className="text-center mb-4">Produits populaires</h1> */}
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
+            <Link to="/detailProduit" className="link"> 
               <div class="card ">
-                <img src={sacamain} class="card-img-top" alt="..." />
+                <img src={chemise} class="card-img-top" alt="..." />
                 <div class="card-body ">
                   <h5 class="card-title">Cotton shirt Regular Fit</h5>
                   <p class="card-text fs-4">1500 fca</p>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">

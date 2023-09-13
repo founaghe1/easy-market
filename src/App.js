@@ -6,17 +6,32 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import Produit from "./Components/Produit/Produit";
 import HommesProduct from "./Components/HommesProduct/HommesProduct";
 import Acueilparcour from "./Components/ParcoursClient/Acueilparcour/Acueilparcour";
+import Pageaccueil from "./Components/Dashdoard/Pageaccueil/Pageaccueil";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="">
+      {/* <Pageaccueil /> */}
       {/* <Navbar />
       <Accueil />
       <Footer /> */}
       {/* <Sidebar /> */}
       {/* <Produit /> */}
       {/* <HommesProduct /> */}
-      <Acueilparcour />
+      {/* <Acueilparcour /> */}
+
+
+
+      <Router>
+      <Routes>
+        <Route path="/" index element={<Pageaccueil />}></Route>
+        <Route path="/produit" element={<Produit />} />
+        <Route path='/hommeProduit' element={<HommesProduct />} />
+        <Route exact path='/detailProduit'  element={<Acueilparcour />}></Route>
+      </Routes>
+    </Router>
+
     </div>
   );
 }

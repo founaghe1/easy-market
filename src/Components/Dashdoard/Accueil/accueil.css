@@ -125,4 +125,8 @@
         margin-bottom: 15px;
     }
   }
+  .link{
+    text-decoration: none;
+    color: rgb(70, 71, 72);
+  }
   

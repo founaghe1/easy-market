@@ -21,6 +21,8 @@ import sac from "../../../Assets/sac.png";
 import shose2 from "../../../Assets/shose2.png";
 import quote from "../../../Assets/quote-up.png";
 import client from "../../../Assets/clienttesti.png";
+import { Link } from 'react-router-dom';
+
 
 const Accueil = () => {
   let items = document.querySelectorAll(".carousel .carousel-item");
@@ -51,9 +53,11 @@ const Accueil = () => {
             <p className="fw-bold fs-5 mt-3">
               Vendez facilement vos meilleurs produits grâce à Easy Market
             </p>
-            <button className="btn text-light mb-sm-2 py-3 px-5 fw-bold mt-3">
-              VOIR NOS PRODUITS
-            </button>
+            <Link to="/produit">
+              <button className="btn text-light mb-sm-2 py-3 px-5 fw-bold mt-3">
+                VOIR NOS PRODUITS
+              </button>
+            </Link>
           </div>
         </div>
         <div className="col-md-5 text-center">
@@ -62,12 +66,14 @@ const Accueil = () => {
       </div>
       <div className="row section1 text-center pt-5">
         <div className="col-md-3 col-sm-6 ">
+          <Link to="/hommeProduit" className="link">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <p className="fs-4">Hommes</p>
             <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
               <IoIosMan className="display-1 ico icoSect1" />
             </p>
           </div>
+          </Link>
         </div>
         <div className="col-md-3 col-sm-6">
           <div className="d-flex flex-column justify-content-center align-items-center">
@@ -221,13 +227,15 @@ const Accueil = () => {
           <h1 className="text-center mb-4">Produits populaires</h1>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
+              <Link to="/detailProduit" className="link"> 
               <div class="card ">
-                <img src={sacamain} class="card-img-top" alt="..." />
+                <img src={chemise} class="card-img-top" alt="..." />
                 <div class="card-body ">
                   <h5 class="card-title">Cotton shirt Regular Fit</h5>
                   <p class="card-text fs-4">1500 fca</p>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
@@ -371,22 +379,25 @@ const Accueil = () => {
       </div>
 
       <div className="newsletterC">
-      <div className="container-fluid  py-5 ">
-        <div className="row">
-          <div className="col-md-4 ps-5 ">
-            <h2 className="ms-md-5 ps-md-5">NEWSLETTER</h2>
-            <p className="ms-md-5 ps-md-5">Stay Up to Date</p>
-          </div>
-          <div className="col-md-8">
-            <div>
-              <div className="search w-100 px-5">
-                <input placeholder="Search..." type="text" className="py-3"/>
-                <button type="submit" className="rounded-circle"> <GoPaperAirplane className="fs-3"/> </button>
+        <div className="container-fluid  py-5 ">
+          <div className="row">
+            <div className="col-md-4 ps-5 ">
+              <h2 className="ms-md-5 ps-md-5">NEWSLETTER</h2>
+              <p className="ms-md-5 ps-md-5">Stay Up to Date</p>
+            </div>
+            <div className="col-md-8">
+              <div>
+                <div className="search w-100 px-5">
+                  <input placeholder="Search..." type="text" className="py-3" />
+                  <button type="submit" className="rounded-circle">
+                    {" "}
+                    <GoPaperAirplane className="fs-3" />{" "}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );
