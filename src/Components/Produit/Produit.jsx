@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './produit.css'
 import Navbar from '../Dashdoard/Navbar/Navbar'
 import Sidebar from '../Sidebar/Sidebar'
 import Productreutisable from '../Productreutilisable/Productreutisable'
@@ -7,16 +8,16 @@ import Footer from '../Dashdoard/Footer/Footer'
 
 const Produit = () => {
   return (
-    <div>
-        <div>
+    <div> 
+        <div className='navb shadow pb-3'>
             <Navbar />
         </div>
         <div className='container-fluid'>
             <div className='row'>
-                <div className='col-md-2 sideb'>
+                <div className='col-md-2 sideba'>
                     <Sidebar />
                 </div>
-                <div className='col-md-10 ps-5'>
+                <div className='col-md-10 ps-md-5'>
                     <Productreutisable />
                     <Productreutisable />
                 </div>

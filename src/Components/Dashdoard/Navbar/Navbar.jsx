@@ -6,6 +6,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineBars, AiOutlineUser, AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { IoIosSearch } from 'react-icons/io';
 import logoNav from "../../../Assets/logoNav.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -38,7 +39,9 @@ const Navbar = () => {
         </div>
         <div className="row text-center">
           <div className="col-md-2 pt-3">
-            <img src={logoNav} alt="" />
+            <Link to="/">
+              <img src={logoNav} alt="" />
+            </Link>
           </div>
           <div className="col-md-6 pt-5 pb-2">
             <div className="searchbar ">
