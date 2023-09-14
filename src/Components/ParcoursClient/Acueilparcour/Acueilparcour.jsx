@@ -3,6 +3,9 @@ import './acueilparcour.css'
 import Navbar from '../../Dashdoard/Navbar/Navbar';
 import chemise from '../../../Assets/chemise.png';
 import { AiOutlineStar, AiFillStar, AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai';
+import Productreutisable from '../../Productreutilisable/Productreutisable';
+import Newletter from '../../Newsletter/Newletter';
+import Footer from '../../Dashdoard/Footer/Footer';
 
 
 const Acueilparcour = () => {
@@ -189,6 +192,23 @@ const Acueilparcour = () => {
                     </tbody>
                     </table>
                 </div>
+            </div>
+
+            <p className='px-5 my-5'>
+                <hr />
+            </p>
+
+            <div className='row px-md-4'>
+                <div className='col-md-12'>
+                    <h3 className='ps-4'>Produits similaires</h3>
+                    <Productreutisable />
+                </div>
+            </div>
+            <div className=''>
+                <Newletter />
+            </div>
+            <div>
+                <Footer />
             </div>
         </div>
     </div>
