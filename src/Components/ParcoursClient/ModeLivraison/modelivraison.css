@@ -1,0 +1,91 @@
+.radio{
+    border: 1px solid rgba(148, 148, 148, 0.232);
+    background-color: rgba(168, 168, 168, 0.186);
+    border-radius: 5px;
+}
+
+.timline1page2, .timline2page2{
+    background:#f07203 !important ;
+  }
+  .timline3page2{
+    background:#b1b1b1 !important ;
+  }
+
+  .timline1page2::before {
+    content: '';
+    width: 960%;
+    height: 2px; 
+    background-color: #f07203; 
+    position: absolute;
+    top: 50%; 
+    left: 100%; 
+    z-index: 1; 
+  }
+
+  .timline2page2::before {
+    content: '';
+    width: 960%;
+    height: 2px; 
+    background-color: #959595; 
+    position: absolute;
+    top: 50%; 
+    left: 100%; 
+    z-index: 1; 
+  }
+
+  @media screen and (max-width: 822px) and (min-width: 520px) {
+    .timline2page2::before {
+        content: '';
+        width: 520%;
+        height: 2px; 
+        background-color: #9a9a9b; 
+        position: absolute;
+        top: 50%; 
+        left: 100%; 
+        z-index: 1; 
+      }
+
+      .timline1page2::before {
+        content: '';
+        width: 520%;
+        height: 2px; 
+        background-color: #f07203; 
+        position: absolute;
+        top: 50%; 
+        left: 100%; 
+        z-index: 1; 
+      }
+      .timline1page2{
+        background:#f07203 !important ;
+        margin-bottom: -23px ;
+      }
+     
+  }
+
+  @media screen and (max-width: 500px) {
+    .timline2page2::before {
+        content: '';
+        width: 300%;
+        height: 2px; 
+        background-color: #959595; 
+        position: absolute;
+        top: 50%; 
+        left: 100%; 
+        z-index: 1; 
+      }
+
+      .timline1page2::before {
+        content: '';
+        width: 300%;
+        height: 2px; 
+        background-color: #f07203; 
+        position: absolute;
+        top: 50%; 
+        left: 100%; 
+        z-index: 1; 
+      }
+      .timline3page2{
+        margin-top: -25px ;
+      }
+      
+  }

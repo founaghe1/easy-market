@@ -22,24 +22,25 @@ import shose2 from "../../../Assets/shose2.png";
 import quote from "../../../Assets/quote-up.png";
 import client from "../../../Assets/clienttesti.png";
 import { Link } from 'react-router-dom';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import Product from "./Product";
+import { productData, responsive } from "./Data";
+import { AiFillStar } from "react-icons/ai"
+
 
 
 const Accueil = () => {
-  let items = document.querySelectorAll(".carousel .carousel-item");
 
-  items.forEach((el) => {
-    const minPerSlide = 4;
-    let next = el.nextElementSibling;
-    for (var i = 2; i < minPerSlide; i++) {
-      if (!next) {
-        // wrap carousel by using first child
-        next = items[0];
-      }
-      let cloneChild = next.cloneNode(true);
-      el.appendChild(cloneChild.children[0]);
-      next = next.nextElementSibling;
-    }
-  });
+  const product = productData.map((item) => (
+    <Product
+      name={item.name}
+      url={item.imageurl}
+      price={item.price}
+      description={item.description}
+    />
+  ));
+  
 
   return (
     <div className="container-fluid princip">
@@ -105,134 +106,32 @@ const Accueil = () => {
       <div class="container pt-5">
         <h1 className="text-center">Nouveautés du moments</h1>
         <br />
-        <div class="row">
-          <div class="col">
-            <div class="container text-center my-3">
-              <div class="row mx-auto my-auto justify-content-center">
-                <div
-                  id="recipeCarousel"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                      <div class="col-md-3">
-                        <div class="card">
-                          <div class="card-img">
-                            <img
-                              src="https://via.placeholder.com/700x500.png/CB997E/333333?text=1"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <div class="card-img-overlay">Slide 1</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="col-md-3">
-                        <div class="card">
-                          <div class="card-img">
-                            <img
-                              src="https://via.placeholder.com/700x500.png/DDBEA9/333333?text=2"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <div class="card-img-overlay">Slide 2</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="col-md-3">
-                        <div class="card">
-                          <div class="card-img">
-                            <img
-                              src="https://via.placeholder.com/700x500.png/FFE8D6/333333?text=3"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <div class="card-img-overlay">Slide 3</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="col-md-3">
-                        <div class="card">
-                          <div class="card-img">
-                            <img
-                              src="https://via.placeholder.com/700x500.png/B7B7A4/333333?text=4"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <div class="card-img-overlay">Slide 4</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="col-md-3">
-                        <div class="card">
-                          <div class="card-img">
-                            <img
-                              src="https://via.placeholder.com/700x500.png/A5A58D/333333?text=5"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <div class="card-img-overlay">Slide 5</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="col-md-3">
-                        <div class="card">
-                          <div class="card-img">
-                            <img
-                              src="https://via.placeholder.com/700x500.png/6B705C/eeeeee?text=6"
-                              class="img-fluid"
-                            />
-                          </div>
-                          <div class="card-img-overlay">Slide 6</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a
-                    class="carousel-control-prev bg-transparent w-aut"
-                    href="#recipeCarousel"
-                    role="button"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                  </a>
-                  <a
-                    class="carousel-control-next bg-transparent w-aut"
-                    href="#recipeCarousel"
-                    role="button"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                  </a>
-                </div>
+        <div className="row">
+          <div className="col">
+            <div className="container text-center my-3">
+              <div className="row  justify-content-center">
+                {/* carroussel */}
+                <Carousel showDots={true} responsive={responsive}>
+                  {product}
+                </Carousel>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
       <div className="sect3">
         <div className="row sect3 pt-5 px-3">
           <h1 className="text-center mb-4">Produits populaires</h1>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
               <Link to="/detailProduit" className="link"> 
-              <div class="card ">
+              <div className="card ">
                 <img src={chemise} class="card-img-top" alt="..." />
-                <div class="card-body ">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+                <div className="card-body ">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
               </Link>
@@ -240,33 +139,33 @@ const Accueil = () => {
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <div class="card">
-                <img src={parfum2} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <div className="card">
+                <img src={parfum2} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <div class="card">
-                <img src={coca} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <div className="card">
+                <img src={coca} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <div class="card">
-                <img src={ceinture} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <div className="card">
+                <img src={ceinture} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
             </div>
@@ -276,44 +175,44 @@ const Accueil = () => {
         <div className="row px-3">
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <div class="card ">
-                <img src={shose1} class="card-img-top" alt="..." />
-                <div class="card-body ">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <div className="card ">
+                <img src={shose1} className="card-img-top" alt="..." />
+                <div className="card-body ">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <div class="card">
-                <img src={montre} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <div className="card">
+                <img src={montre} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <div class="card">
-                <img src={sac} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <div className="card">
+                <img src={sac} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <div class="card">
-                <img src={shose2} class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <div className="card">
+                <img src={shose2} className="card-img-top" alt="..." />
+                <div className="card-body">
+                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
+                  <p className="card-text fs-4">1500 fca</p>
                 </div>
               </div>
             </div>
@@ -335,10 +234,13 @@ const Accueil = () => {
                 Obcaecati deleniti molestias vel eos laboriosam id, consectetur
                 sit similique esse soluta odit eligendi iste.
               </p>
-              <div>
+              <div className="d-flex justify-content-between align-items-center">
                 <p>
                   <img src={client} alt="" />
                   <span className="ms-2 fw-bold fs-5">Coper Toby</span>
+                </p>
+                <p className="d-flex justify-content-between align-items-center">
+                  <AiFillStar className="stoile fs-2"/> <span className="fw-bold fs-5">4.1</span>
                 </p>
               </div>
             </div>
@@ -351,10 +253,13 @@ const Accueil = () => {
                 Obcaecati deleniti molestias vel eos laboriosam id, consectetur
                 sit similique esse soluta odit eligendi iste.
               </p>
-              <div>
+              <div className="d-flex justify-content-between align-items-center">
                 <p>
                   <img src={client} alt="" />
                   <span className="ms-2 fw-bold fs-5">Coper Toby</span>
+                </p>
+                <p className="d-flex justify-content-between align-items-center">
+                  <AiFillStar className="stoile fs-2"/> <span className="fw-bold fs-5">4.3</span>
                 </p>
               </div>
             </div>
@@ -367,10 +272,13 @@ const Accueil = () => {
                 Obcaecati deleniti molestias vel eos laboriosam id, consectetur
                 sit similique esse soluta odit eligendi iste.
               </p>
-              <div>
+              <div className="d-flex justify-content-between align-items-center">
                 <p>
                   <img src={client} alt="" />
                   <span className="ms-2 fw-bold fs-5">Coper Toby</span>
+                </p>
+                <p className="d-flex justify-content-between align-items-center">
+                  <AiFillStar className="stoile fs-2"/> <span className="fw-bold fs-5">4.5</span>
                 </p>
               </div>
             </div>

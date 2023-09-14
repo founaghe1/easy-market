@@ -6,6 +6,8 @@ import { AiOutlineStar, AiFillStar, AiOutlineHeart, AiOutlineShoppingCart } from
 import Productreutisable from '../../Productreutilisable/Productreutisable';
 import Newletter from '../../Newsletter/Newletter';
 import Footer from '../../Dashdoard/Footer/Footer';
+import { Link } from 'react-router-dom';
+
 
 
 const Acueilparcour = () => {
@@ -62,7 +64,9 @@ const Acueilparcour = () => {
                             <button className='btnFav px-5 py-2 fs-3 me-2'>Favoris <AiOutlineHeart className='coeur'/></button>
                         </p>
                         <p>
-                            <button className='btnAjou px-4 text-light pt-3 pb-3 fw-bold'>Ajouter au panier <AiOutlineShoppingCart className='fs-4' /></button>
+                            <Link to="/monPanier" >
+                                <button className='btnAjou px-4 text-light pt-3 pb-3 fw-bold'>Ajouter au panier <AiOutlineShoppingCart className='fs-4' /></button>
+                            </Link>
                         </p>
                         
                     </div>
