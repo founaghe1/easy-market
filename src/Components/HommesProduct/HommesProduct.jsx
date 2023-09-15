@@ -12,7 +12,7 @@ const HommesProduct = () => {
     <div >
         <div>
             <Navbar />
-        </div>
+        </div> 
         <div className='container-fluid'>
             <div className='row'>
                 <div className='col-md-2 sideb'>
