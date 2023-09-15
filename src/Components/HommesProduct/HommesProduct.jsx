@@ -18,8 +18,8 @@ const HommesProduct = () => {
                 <div className='col-md-2 sideb'>
                     <Sidebar />
                 </div>
-                <div className='col-md-10 ps-5 pt-5'>
-                    <p> <span className='spMan p-2'> <IoIosMan className='fs-3 man'/> </span> <span className='ps-2 homm'>Hommes</span> </p>
+                <div className='col-md-10 ps-md-5 pt-5'>
+                    <p className='ps-2'> <span className='spMan p-2'> <IoIosMan className='fs-3 man'/> </span> <span className='ps-2 homm'>Hommes</span> </p>
                     <Productreutisable />
                     <Productreutisable />
                 </div>
