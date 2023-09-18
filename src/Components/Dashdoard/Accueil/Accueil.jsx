@@ -264,7 +264,7 @@ const Accueil = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mt-3">
+          <div className="col-md-4 mt-3 shadow">
             <div className="testi px-3 py-2 rounded">
               <img src={quote} alt="" />
               <p className="fs-5">
