@@ -12,20 +12,20 @@ import { Link } from 'react-router-dom';
 const Productreutisable = () => {
   return (
     <div>
-        <div>
+        <div className='container-fluid'>
         <div className="sect3">
         <div className="row sect3 pt-5 px-3">
           {/* <h1 className="text-center mb-4">Produits populaires</h1> */}
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-            <Link to="/detailProduit" className="link"> 
-              <div class="card ">
-                <img src={chemise} class="card-img-top" alt="..." />
-                <div class="card-body ">
-                  <h5 class="card-title">Cotton shirt Regular Fit</h5>
-                  <p class="card-text fs-4">1500 fca</p>
+              <Link to="/detail-produit" className="link"> 
+                <div class="card ">
+                  <img src={chemise} class="card-img-top" alt="..." />
+                  <div class="card-body ">
+                    <h5 class="card-title">Cotton shirt Regular Fit</h5>
+                    <p class="card-text fs-4">1500 fca</p>
+                  </div>
                 </div>
-              </div>
               </Link>
             </div>
           </div>

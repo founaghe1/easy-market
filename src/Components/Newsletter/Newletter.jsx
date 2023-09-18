@@ -4,7 +4,7 @@ import { GoPaperAirplane } from "react-icons/go";
 
 const Newletter = () => {
   return (
-    <div>
+    <div className='newL'>
       <div className="newsletterC">
         <div className="container-fluid  py-5 ">
           <div className="row">

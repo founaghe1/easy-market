@@ -67,7 +67,7 @@ const Accueil = () => {
       </div>
       <div className="row section1 text-center pt-5">
         <div className="col-md-3 col-sm-6 ">
-          <Link to="/hommeProduit" className="link">
+          <Link to="/produit-homme" className="link">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <p className="fs-4">Hommes</p>
             <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
@@ -111,7 +111,7 @@ const Accueil = () => {
             <div className="container text-center my-3">
               <div className="row  justify-content-center">
                 {/* carroussel */}
-                <Carousel showDots={true} responsive={responsive}>
+                <Carousel showDots={true} responsive={responsive} className="pb-5">
                   {product}
                 </Carousel>
               </div>
@@ -126,7 +126,7 @@ const Accueil = () => {
           <h1 className="text-center mb-4">Produits populaires</h1>
           <div className="col-md-3 col-sm-6">
             <div className="p-2">
-              <Link to="/detailProduit" className="link"> 
+              <Link to="/detail-produit" className="link"> 
               <div className="card ">
                 <img src={chemise} class="card-img-top" alt="..." />
                 <div className="card-body ">
@@ -286,27 +286,6 @@ const Accueil = () => {
         </div>
       </div>
 
-      <div className="newsletterC">
-        <div className="container-fluid  py-5 ">
-          <div className="row">
-            <div className="col-md-4 ps-5 ">
-              <h2 className="ms-md-5 ps-md-5">NEWSLETTER</h2>
-              <p className="ms-md-5 ps-md-5">Stay Up to Date</p>
-            </div>
-            <div className="col-md-8">
-              <div>
-                <div className="search w-100 px-5">
-                  <input placeholder="Search..." type="text" className="py-3" />
-                  <button type="submit" className="rounded-circle">
-                    {" "}
-                    <GoPaperAirplane className="fs-3" />{" "}
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
