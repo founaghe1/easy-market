@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Montserrat+Subrayada:wght@700&family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&family=Rubik:wght@500&family=Work+Sans&display=swap');
+
+.form-titre h6 {
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.13px;
+    color: black;
+}
+
+form label {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.09px;
+    letter-spacing: 6%;
+}
+
+form .form-control {
+    background-color: #f8f8f8;
+    color: black;
+}
+input{
+    border : none !important ;
+}
+
+@media screen and (max-width: 822px) {
+    .myForm{
+        width: 100% !important;
+    }
+}

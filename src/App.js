@@ -12,6 +12,10 @@ import Monpanier from "./Components/ParcoursClient/Monpanier/Monpanier";
 import Infoclient from "./Components/ParcoursClient/InfoClientValidation/InfoClient/Infoclient";
 import Modelivraison from "./Components/ParcoursClient/ModeLivraison/Modelivraison";
 import Modepaiement from "./Components/ParcoursClient/Modepaiement/Modepaiement";
+import Compte from "./Components/Compteuser/Compte/Compte";
+import Commande from './Components/Compteuser/Comande/Commande'
+import MonPanier from "./Components/Compteuser/MonPanier/MonPanier";
+import Favoris from './Components/Compteuser/Favoris/Favoris'
 
 function App() {
   return (
@@ -38,6 +42,10 @@ function App() {
         <Route path="/infopersonnelle" element={<Infoclient />} />
         <Route path="/modelivraison" element={<Modelivraison />} />
         <Route path="/modepaiement" element={<Modepaiement />} />
+        <Route path='/compte' element={<Compte />} />
+        <Route path='/commande' element={<Commande />} />
+        <Route path='/panier' element={<MonPanier />} />
+        <Route path='/favoris' element={<Favoris />} />
       </Routes>
     </Router>
       

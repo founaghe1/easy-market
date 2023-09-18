@@ -79,8 +79,10 @@ const Navbar = () => {
           <div className="col-md-4 d-md-flex justify-content-start pt-3 pt-md-5">
             <div className="pe-md-3 pt-1">
                 <div>
-                    <AiOutlineUser className="fs-3 me-1 ico"/>
-                    <span className="fw-bold">Mon compte</span>
+                    <Link to="/compte" className='text-decoration-none link mb-0'>
+                      <AiOutlineUser className="fs-3 me-1 ico"/>
+                      <span className="fw-bold">Mon compte</span>
+                    </Link>
                 </div>
             </div>
             <div className="pe-md-3 pt-1">
