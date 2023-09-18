@@ -10,7 +10,7 @@ import Navbar from '../../Navbar/Navbar';
 const Compte = () => {
     return (
         <div>
-            <Navbar />
+            
             <div className='container-fluid my-3 ps-md-5'>
                 <div className="row">
                     <div className="col-md-2 ">
@@ -32,8 +32,7 @@ const Compte = () => {
                     </div>
                 </div>
             </div>
-            <Newsletter />
-            <Footer />
+            
         </div>
     )
 }
