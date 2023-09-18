@@ -17,6 +17,7 @@ const NewProduit = () => {
                 <div className="row">
                     <div className="div">
                         <h1 className='text-center'>Nouveaux produits</h1>
+                        
                     </div>
                 </div>
 

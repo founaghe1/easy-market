@@ -89,9 +89,9 @@ const Navbar = () => {
               <AiOutlineHeart className="fs-3 me-1 ico" />
               <span className="fw-bold">Favoris</span>
             </div>
-            <Link to="/monPanier" className="link text-decoration-none text-dark">
-              <div className="pt-1">
-                <AiOutlineShoppingCart className="fs-3 me-1 ico" />
+            <Link to="/mon-panier" className="link">
+            <div className="pt-1">
+                <AiOutlineShoppingCart className="fs-3 me-1 ico"/>
                 <span className="fw-bold">Panier</span>
               </div>
             </Link>

@@ -2,6 +2,17 @@
     display: block;
 }
 
+.fil-arien{
+    font-family: "Rubik";
+    font-size: 14px;
+    color: #8E8E8ECC;
+    ;
+}
+.fil-arien .chemin{
+    font-size: 18px;
+    color: #2A2E34;
+}
+
 @media screen and (max-width: 750px) {
     .sideba{
         display: none;

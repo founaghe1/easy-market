@@ -27,6 +27,7 @@ import "react-multi-carousel/lib/styles.css";
 import Product from "./Product";
 import { productData, responsive } from "./Data";
 import { AiFillStar } from "react-icons/ai"
+import ProdPopulaire from "../../ProdPopulaire/ProdPopulaire";
 
 
 
@@ -67,7 +68,7 @@ const Accueil = () => {
       </div>
       <div className="row section1 text-center pt-5">
         <div className="col-md-3 col-sm-6 ">
-          <Link to="/hommeProduit" className="link">
+          <Link to="/produit-homme" className="link">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <p className="fs-4">Hommes</p>
             <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
@@ -111,7 +112,7 @@ const Accueil = () => {
             <div className="container text-center my-3">
               <div className="row  justify-content-center">
                 {/* carroussel */}
-                <Carousel showDots={true} responsive={responsive}>
+                <Carousel showDots={true} responsive={responsive} className="pb-5">
                   {product}
                 </Carousel>
               </div>
@@ -121,106 +122,8 @@ const Accueil = () => {
       </div>
 
 
-      <div className="sect3">
-        <div className="row sect3 pt-5 px-3">
-          <h1 className="text-center mb-4">Produits populaires</h1>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <Link to="/detailProduit" className="link"> 
-              <div className="card ">
-                <img src={chemise} class="card-img-top" alt="..." />
-                <div className="card-body ">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-              </Link>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={parfum2} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={coca} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={ceinture} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row px-3">
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card ">
-                <img src={shose1} className="card-img-top" alt="..." />
-                <div className="card-body ">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={montre} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={sac} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={shose2} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p className="text-end pe-5">
-          <button className="voirplus fs-3 ">Voir plus</button>
-        </p>
+      <div>
+        <ProdPopulaire />
       </div>
 
       <div className="testimonial pb-5 px-3">
@@ -286,27 +189,6 @@ const Accueil = () => {
         </div>
       </div>
 
-      <div className="newsletterC">
-        <div className="container-fluid  py-5 ">
-          <div className="row">
-            <div className="col-md-4 ps-5 ">
-              <h2 className="ms-md-5 ps-md-5">NEWSLETTER</h2>
-              <p className="ms-md-5 ps-md-5">Stay Up to Date</p>
-            </div>
-            <div className="col-md-8">
-              <div>
-                <div className="search w-100 px-5">
-                  <input placeholder="Search..." type="text" className="py-3" />
-                  <button type="submit" className="rounded-circle">
-                    {" "}
-                    <GoPaperAirplane className="fs-3" />{" "}
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

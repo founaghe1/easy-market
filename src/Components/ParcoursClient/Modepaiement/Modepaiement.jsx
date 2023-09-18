@@ -1,17 +1,28 @@
 import React from 'react';
 import './modepaiement.css';
-import Navbar from '../../Navbar/Navbar';
+// import Navbar from '../../Dashdoard/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-import Newletter from '../../Newsletter/Newletter';
-import Footer from '../../Dashdoard/Footer/Footer';
+// import Newletter from '../../Newsletter/Newletter';
+// import Footer from '../../Dashdoard/Footer/Footer';
 
 
 const Modepaiement = () => {
   return (
     <div>
-      <div className="shadow pb-3">
+      {/* <div className="shadow pb-3">
         <Navbar />
-      </div>
+      </div> */}
+      <p className='fil-arien text-start ps-5 pt-5'>
+        <Link to='/produit' className='text-decoration-none'>
+          <span className='chemin fw-bold pe-1'>Marketplace  </span>
+        </Link> 
+        {'>'} 
+        <Link to="/mon-panier" className='text-decoration-none'>
+          <span className='actuel ps-1 pe-1'> mon panier </span> 
+        </Link>
+        {'>'} <span className='actuel ps-1'>  valider mon panier</span>
+      </p>
+
       <div className="container-fluid pb-3">
         <div className="row">
           <div className="col-md-9">
@@ -69,7 +80,7 @@ const Modepaiement = () => {
                   </div>
                   <div className="d-flex justify-content-end justify-content-sm-center pt-5 divbtn">
                     <p className="text-center px-2 ">
-                      <Link to="/modelivraison">
+                      <Link to="/mode-livraison">
                         <button className="btnbloc px-5 py-3 ">RETOUR</button>
                       </Link>
                     </p>
@@ -106,12 +117,12 @@ const Modepaiement = () => {
           </div>
         </div>
       </div>
-      <div className='newL'>
+      {/* <div className='newL'>
           <Newletter />
         </div>
         <div>
           <Footer />
-        </div>
+        </div> */}
     </div>
   )
 }
