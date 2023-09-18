@@ -1,5 +1,5 @@
 .footer{
-    background: linear-gradient(160deg, rgb(245, 139, 25), rgb(148, 51, 3));
+    background: linear-gradient(160deg, rgba(229, 137, 36, 1), rgba(219, 36, 42, 1));
 }
 
 .ul{
@@ -8,4 +8,9 @@
 .ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+
+.copy{
+    font-family: Work Sans;
+    font-size: 20px;
 }

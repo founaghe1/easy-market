@@ -46,6 +46,10 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            <div className='row'>
+                <p className='px-5 text-light'><hr /></p>
+                <p className='text-center copy text-light'>© 2023 All rights reserved</p>
+            </div>
         </div>
     </div>
   )
