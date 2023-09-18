@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&display=swap');
+
+.paraTexte{
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16.42px;
+    line-height: 23.06px;
+    letter-spacing: 0.1px;
+
+}
+.paragraphe{
+    font-family: 'Inter', sans-serif;
+}

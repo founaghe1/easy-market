@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&family=Rubik:wght@500&family=Work+Sans&display=swap');
+
+.para{
+    color: rgb(5, 196, 129);
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.09px;
+    background-color: #74e2bb37;
+}
+.tabRow{
+    background-color:rgba(240, 240, 240, 0.5) !important ;
+    border-bottom: 3px solid white;
+}
+.myTab{
+    border: rgba(255, 0, 0, 0);
+}

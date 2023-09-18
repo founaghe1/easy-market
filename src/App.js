@@ -12,7 +12,14 @@ import Monpanier from "./Components/ParcoursClient/Monpanier/Monpanier";
 import Infoclient from "./Components/ParcoursClient/InfoClientValidation/InfoClient/Infoclient";
 import Modelivraison from "./Components/ParcoursClient/ModeLivraison/Modelivraison";
 import Modepaiement from "./Components/ParcoursClient/Modepaiement/Modepaiement";
+<<<<<<< HEAD
 import Layout from "./Components/Layout/Layout";
+=======
+import Compte from "./Components/Compteuser/Compte/Compte";
+import Commande from './Components/Compteuser/Comande/Commande'
+import MonPanier from "./Components/Compteuser/MonPanier/MonPanier";
+import Favoris from './Components/Compteuser/Favoris/Favoris'
+>>>>>>> 5c1f707e6a7cc468b9b0182552077314e0074d03
 
 function App() {
   return (
