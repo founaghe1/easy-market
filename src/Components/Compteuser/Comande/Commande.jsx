@@ -4,7 +4,7 @@ import Newsletter from "../../Newsletter/Newletter";
 import Footer from "../../Dashdoard/Footer/Footer";
 import SideBarCompte from "../SideBarCompte/SideBarCompte";
 import SidebarFooter from "../SidebarFooter/SidebarFooter";
-import Navbar from "../../Dashdoard/Navbar/Navbar";
+import Navbar from "../../Navbar/Navbar";
 import { AiFillDelete } from "react-icons/ai";
 import { IoEyeSharp } from "react-icons/io5";
 

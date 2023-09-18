@@ -5,7 +5,7 @@ import Footer from '../../Dashdoard/Footer/Footer';
 import SideBarCompte from '../SideBarCompte/SideBarCompte';
 import Formulaire from '../Formulaire/Formulaire';
 import SidebarFooter from '../SidebarFooter/SidebarFooter';
-import Navbar from '../../Dashdoard/Navbar/Navbar';
+import Navbar from '../../Navbar/Navbar';
 
 const Compte = () => {
     return (

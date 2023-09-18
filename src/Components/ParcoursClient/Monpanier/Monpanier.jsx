@@ -1,6 +1,6 @@
 import React from 'react';
 import './monpanier.css';
-import Navbar from '../../Dashdoard/Navbar/Navbar';
+import Navbar from '../../Navbar/Navbar';
 import matos from '../../../Assets/matos.png';
 import { Link } from 'react-router-dom';
 import Footer from '../../Dashdoard/Footer/Footer';

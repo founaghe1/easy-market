@@ -1,6 +1,6 @@
 import React from 'react';
 import './produit.css'
-import Navbar from '../Dashdoard/Navbar/Navbar'
+import Navbar from '../Navbar/Navbar'
 import Sidebar from '../Sidebar/Sidebar'
 import Productreutisable from '../Productreutilisable/Productreutisable'
 import Newletter from '../Newsletter/Newletter'

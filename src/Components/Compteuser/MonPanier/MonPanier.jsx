@@ -4,7 +4,7 @@ import Footer from '../../Dashdoard/Footer/Footer'
 import SideBarCompte from '../SideBarCompte/SideBarCompte'
 import TablePanier from '../TablePanier/TablePanier'
 import SidebarFooter from '../SidebarFooter/SidebarFooter'
-import Navbar from '../../Dashdoard/Navbar/Navbar'
+import Navbar from '../../Navbar/Navbar'
 const MonPanier = () => {
     return (
         <div>

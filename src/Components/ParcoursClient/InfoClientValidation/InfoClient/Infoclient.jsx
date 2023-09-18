@@ -1,6 +1,6 @@
 import React from "react";
 import "./infoclient.css";
-import Navbar from "../../../Dashdoard/Navbar/Navbar";
+import Navbar from "../../../Navbar/Navbar";
 import { Link } from "react-router-dom";
 import Newletter from "../../../Newsletter/Newletter";
 import Footer from "../../../Dashdoard/Footer/Footer";

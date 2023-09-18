@@ -5,7 +5,7 @@ import { GrDeliver } from "react-icons/gr";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiOutlineBars, AiOutlineUser, AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 import { IoIosSearch } from 'react-icons/io';
-import logoNav from "../../../Assets/logoNav.png";
+import logoNav from "../../Assets/logoNav.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -13,22 +13,22 @@ const Navbar = () => {
     <div>
       <div className="container-fluid">
         <div className="row text-center pt-2 nav1">
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div>
               <p className="">
-                <GrDeliver className="me-2"/>
+                <GrDeliver className="me-2" />
                 <span className="fw-bold">Service disponible 24h/24</span>
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div>
               <p>
                 <GrDeliver className="me-2" /> <span className="fw-bold">Livraison en 24h</span>
               </p>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-12 col-sm-12">
             <div>
               <p>
                 <BsFillTelephoneFill className="me-2" />
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <div className="searchbar-left">
                   <div className="search-icon-wrapper">
                     <span className="search-icon searchbar-icon">
-                      <IoIosSearch className="fs-3 ico"/>
+                      <IoIosSearch className="fs-5 ico" />
                     </span>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="searchbar-right">
-                    <AiOutlineBars className="searshIco fs-1  me-2 ico"/>
+                  <AiOutlineBars className="searshIco mt-2 fs-5 me-2 ico" />
                 </div>
               </div>
             </div>
@@ -86,14 +86,14 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="pe-md-3 pt-1">
-                <AiOutlineHeart className="fs-3 me-1 ico"/>
-                <span className="fw-bold">Favoris</span>
+              <AiOutlineHeart className="fs-3 me-1 ico" />
+              <span className="fw-bold">Favoris</span>
             </div>
-            <Link to="/monPanier" className="link">
-            <div className="pt-1">
-                <AiOutlineShoppingCart className="fs-3 me-1 ico"/>
+            <Link to="/monPanier" className="link text-decoration-none text-dark">
+              <div className="pt-1">
+                <AiOutlineShoppingCart className="fs-3 me-1 ico" />
                 <span className="fw-bold">Panier</span>
-            </div>
+              </div>
             </Link>
           </div>
         </div>

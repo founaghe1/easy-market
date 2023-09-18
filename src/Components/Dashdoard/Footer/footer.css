@@ -1,21 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300&family=Rubik&family=Work+Sans&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@700&family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300&family=Roboto+Slab:wght@500;600&family=Roboto:wght@500;700&family=Rubik&family=Work+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&family=Work+Sans&display=swap');
 .footer{
     background: linear-gradient(160deg, rgba(229, 137, 36, 1), rgba(219, 36, 42, 1));
     font-family: Roboto;
 }
 
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+.footer .titre .tiret{
+    background: #fff;
+    width: 30px;
+    height: 3px;
+}
+.footer p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
 .ul{
     list-style-type : none;
 }
-.ul li a{
+.ul .li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 37px;
+    color: #fff;
+}
+
+.ul .list a{
+    text-decoration: none;
+    font-family: 'Work', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 37px;
+    color: #fff;
 }
 
 .copy{
-    font-family: Work Sans;
+    font-family: 'Work', sans-serif;
+    font-weight: 400;
     font-size: 20px;
+    line-height: 20px;
+    color: #fff;
 }

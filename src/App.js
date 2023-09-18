@@ -1,8 +1,9 @@
-import Navbar from "./Components/Dashdoard/Navbar/Navbar"
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+// import Navbar from "./Components/Dashdoard/Navbar/Navbar"
 import './App.css';
-import Accueil from "./Components/Dashdoard/Accueil/Accueil";
-import Footer from "./Components/Dashdoard/Footer/Footer";
-import Sidebar from "./Components/Sidebar/Sidebar";
+// import Accueil from "./Components/Dashdoard/Accueil/Accueil";
+// import Footer from "./Components/Dashdoard/Footer/Footer";
+// import Sidebar from "./Components/Sidebar/Sidebar";
 import Produit from "./Components/Produit/Produit";
 import HommesProduct from "./Components/HommesProduct/HommesProduct";
 import Acueilparcour from "./Components/ParcoursClient/Acueilparcour/Acueilparcour";
@@ -20,7 +21,7 @@ import Favoris from './Components/Compteuser/Favoris/Favoris'
 function App() {
   return (
     <div className="">
-      
+
       {/* <Pageaccueil /> */}
       {/* <Navbar />
       <Accueil />

@@ -1,6 +1,6 @@
 import React from 'react';
 import './acueilparcour.css'
-import Navbar from '../../Dashdoard/Navbar/Navbar';
+import Navbar from '../../Navbar/Navbar';
 import chemise from '../../../Assets/chemise.png';
 import { AiOutlineStar, AiFillStar, AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai';
 import Productreutisable from '../../Productreutilisable/Productreutisable';

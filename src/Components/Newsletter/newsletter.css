@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&display=swap');
+
+.newsletterC h2{
+  font-family: 'Roboto' serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+.newsletterC p{
+  font-family: 'Roboto' serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
 /* newsletter */
 .search {
     display: inline-block;
     position: relative;
 
+  }
+  input::placeholder{
+    font-family: "Montserrat" serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
   }
   
   .search input[type="text"] {
@@ -14,15 +34,16 @@
   }
   
   .search button[type="submit"] {
+    
     background-color: #d45e14;
     border: none;
     color: #fff;
     cursor: pointer;
-    padding: 20px 20px;
+    padding: 15px 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: absolute;
-    top: -3px;
-    right: 90px;
+    top: -1px;
+    right: 110px;
     transition: .9s ease;
   }
   
