@@ -4,9 +4,8 @@ import { GoPaperAirplane } from "react-icons/go";
 
 const Newletter = () => {
   return (
-    <div className='newL'>
-      <div className="newsletterC">
-        <div className="container-fluid  py-5 ">
+      <section className="newsletterC">
+        <div className="container py-5 ">
           <div className="row">
             <div className="col-md-4 ps-5 ">
               <h2 className="ms-md-5 ps-md-5">NEWSLETTER</h2>
@@ -15,7 +14,7 @@ const Newletter = () => {
             <div className="col-md-8">
               <div>
                 <div className="search w-100 px-5">
-                  <input placeholder="Search..." type="text" className="py-3" />
+                  <input placeholder="Your email..." type="text" className="py-3 rounded-pill" />
                   <button type="submit" className="rounded-circle">
                     {" "}
                     <GoPaperAirplane className="fs-3" />{" "}
@@ -25,8 +24,7 @@ const Newletter = () => {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
   );
 };
 

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Montserrat+Subrayada:wght@700&family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&family=Rubik:wght@500&family=Work+Sans&display=swap');
+.bouton{
+    font-family: "Inter" serif;
+    border: none;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25.41px;
+    border: none;
+}

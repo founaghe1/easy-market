@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar from "../Dashdoard/Navbar/Navbar";
+import Navbar from "../Navbar/Navbar";
 import Footer from "../Dashdoard/Footer/Footer";
 import Newletter from "../Newsletter/Newletter";
 

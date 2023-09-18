@@ -13,11 +13,15 @@ import Infoclient from "./Components/ParcoursClient/InfoClientValidation/InfoCli
 import Modelivraison from "./Components/ParcoursClient/ModeLivraison/Modelivraison";
 import Modepaiement from "./Components/ParcoursClient/Modepaiement/Modepaiement";
 import Layout from "./Components/Layout/Layout";
+import Compte from './Components/Compteuser/Compte/Compte';
+import Commande from './Components/Compteuser/Comande/Commande';
+import MonPanier from './Components/Compteuser/MonPanier/MonPanier';
+import Favoris from './Components/Compteuser/Favoris/Favoris'
 
 function App() {
   return (
     <div className="">
-      
+
       {/* <Pageaccueil /> */}
       {/* <Navbar />
       <Accueil />
@@ -40,13 +44,16 @@ function App() {
             <Route path="/informations-personnelles" element={<Infoclient />} />
             <Route path="/mode-livraison" element={<Modelivraison />} />
             <Route path="/mode-paiement" element={<Modepaiement />} />
+            <Route path='/compte' element={<Compte />} />
+            <Route path='/commande' element={<Commande />} />
+            <Route path='/panier' element={<MonPanier />} />
+            <Route path='/favoris' element={<Favoris />} />
           </Route>
         </Routes>
       </Router>
-      
-
-    </div>
+    </div> 
   );
 }
 
 export default App;
+

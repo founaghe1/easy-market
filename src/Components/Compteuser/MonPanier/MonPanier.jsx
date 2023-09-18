@@ -4,12 +4,11 @@ import Footer from '../../Dashdoard/Footer/Footer'
 import SideBarCompte from '../SideBarCompte/SideBarCompte'
 import TablePanier from '../TablePanier/TablePanier'
 import SidebarFooter from '../SidebarFooter/SidebarFooter'
-import Navbar from '../../Dashdoard/Navbar/Navbar'
+import Navbar from '../../Navbar/Navbar'
 const MonPanier = () => {
     return (
         <div>
-            {/* <Header /> */}
-            <Navbar />
+            
             <div className='container-fluid my-3 ps-md-5'>
                 <div className="row my-3">
                     <div className="col-lg-2">
@@ -29,8 +28,7 @@ const MonPanier = () => {
                     </div>
                 </div>
             </div>
-            <Newsletter />
-            <Footer />
+            
         </div>
     )
 }

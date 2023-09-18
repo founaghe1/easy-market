@@ -27,6 +27,7 @@ import "react-multi-carousel/lib/styles.css";
 import Product from "./Product";
 import { productData, responsive } from "./Data";
 import { AiFillStar } from "react-icons/ai"
+import ProdPopulaire from "../../ProdPopulaire/ProdPopulaire";
 
 
 
@@ -121,106 +122,8 @@ const Accueil = () => {
       </div>
 
 
-      <div className="sect3">
-        <div className="row sect3 pt-5 px-3">
-          <h1 className="text-center mb-4">Produits populaires</h1>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <Link to="/detail-produit" className="link"> 
-              <div className="card ">
-                <img src={chemise} class="card-img-top" alt="..." />
-                <div className="card-body ">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-              </Link>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={parfum2} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={coca} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={ceinture} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row px-3">
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card ">
-                <img src={shose1} className="card-img-top" alt="..." />
-                <div className="card-body ">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={montre} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={sac} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-3 col-sm-6">
-            <div className="p-2">
-              <div className="card">
-                <img src={shose2} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">Cotton shirt Regular Fit</h5>
-                  <p className="card-text fs-4">1500 fca</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p className="text-end pe-5">
-          <button className="voirplus fs-3 ">Voir plus</button>
-        </p>
+      <div>
+        <ProdPopulaire />
       </div>
 
       <div className="testimonial pb-5 px-3">
@@ -264,7 +167,7 @@ const Accueil = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mt-3">
+          <div className="col-md-4 mt-3 shadow">
             <div className="testi px-3 py-2 rounded">
               <img src={quote} alt="" />
               <p className="fs-5">

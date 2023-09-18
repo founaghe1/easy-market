@@ -3,15 +3,14 @@ import Newsletter from "../../Newsletter/Newletter";
 import Footer from "../../Dashdoard/Footer/Footer";
 import SideBarCompte from "../SideBarCompte/SideBarCompte";
 import SidebarFooter from "../SidebarFooter/SidebarFooter";
-import Navbar from "../../Dashdoard/Navbar/Navbar";
+import Navbar from "../../Navbar/Navbar";
 import { similaire } from '../data/Data'
 
 
 const Favoris = () => {
     return (
         <div>
-            {/* <Header /> */}
-            <Navbar />
+            
             <div className='container-fluid my-3 ps-md-5'>
                 <div className="row my-3">
                     <div className="col-lg-2">
@@ -41,8 +40,7 @@ const Favoris = () => {
                 </div>
             </div>
 
-            <Newsletter />
-            <Footer />
+            
         </div>
     )
 }

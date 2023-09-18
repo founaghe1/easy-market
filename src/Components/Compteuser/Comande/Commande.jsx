@@ -4,15 +4,14 @@ import Newsletter from "../../Newsletter/Newletter";
 import Footer from "../../Dashdoard/Footer/Footer";
 import SideBarCompte from "../SideBarCompte/SideBarCompte";
 import SidebarFooter from "../SidebarFooter/SidebarFooter";
-import Navbar from "../../Dashdoard/Navbar/Navbar";
+import Navbar from "../../Navbar/Navbar";
 import { AiFillDelete } from "react-icons/ai";
 import { IoEyeSharp } from "react-icons/io5";
 
 const Commande = () => {
   return (
     <div>
-      {/* <Header /> */}
-      <Navbar />
+      
       <div className="container-fluid my-3 ps-md-5">
         <div className="row">
           <div className="col-lg-2">
@@ -125,8 +124,7 @@ const Commande = () => {
           </div>
         </div>
       </div>
-      <Newsletter />
-      <Footer />
+      
     </div>
   );
 };
