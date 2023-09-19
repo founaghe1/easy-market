@@ -2,7 +2,7 @@ import React from 'react';
 import './footer.css'
 import logofooter from '../../../Assets/logofooter.png';
 import { BsWhatsapp, BsTelephone, BsDot } from 'react-icons/bs';
-
+ 
 
 const Footer = () => {
     return (
