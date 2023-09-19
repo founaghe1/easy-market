@@ -1,9 +1,12 @@
 import React from 'react';
 import like from "../../../Assets/like.svg";
+import { Link } from 'react-router-dom';
+
 
 const Product = (props) => {
   return (
     <div>
+      <Link to="/detail-produit" className="text-decoration-none"> 
       <div className="card">
         <span class="pricing">Nouveau</span>
         <img className="product--image" src={props.url} alt="product image" />
@@ -17,6 +20,7 @@ const Product = (props) => {
           <p className="card-text">150 000 fca</p>
         </div>
       </div>
+      </Link>
     </div>
   )
 }
