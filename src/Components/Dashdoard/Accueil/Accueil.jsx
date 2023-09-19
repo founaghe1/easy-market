@@ -21,18 +21,16 @@ import sac from "../../../Assets/sac.png";
 import shose2 from "../../../Assets/shose2.png";
 import quote from "../../../Assets/quote-up.png";
 import client from "../../../Assets/clienttesti.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Product from "./Product";
-import { productData, responsive } from "./Data";
-import { AiFillStar } from "react-icons/ai"
+import { favorisData, productData, responsive, respTestimonial } from "./Data";
+import { AiFillStar } from "react-icons/ai";
 import ProdPopulaire from "../../ProdPopulaire/ProdPopulaire";
-
-
+import Testimonials from "../Testimonials/Testimonials";
 
 const Accueil = () => {
-
   const product = productData.map((item) => (
     <Product
       name={item.name}
@@ -41,7 +39,15 @@ const Accueil = () => {
       description={item.description}
     />
   ));
-  
+
+  const favoris = favorisData.map((item) => (
+    <Testimonials
+      userName={item.userName}
+      img={item.img}
+      note={item.note}
+      description={item.description}
+    />
+  ));
 
   return (
     <div className="container-fluid princip">
@@ -69,12 +75,12 @@ const Accueil = () => {
       <div className="row section1 text-center pt-5">
         <div className="col-md-3 col-sm-6 ">
           <Link to="/produit-homme" className="link">
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <p className="fs-4">Hommes</p>
-            <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
-              <IoIosMan className="display-1 ico icoSect1" />
-            </p>
-          </div>
+            <div className="d-flex flex-column justify-content-center align-items-center">
+              <p className="fs-4">Hommes</p>
+              <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
+                <IoIosMan className="display-1 ico icoSect1" />
+              </p>
+            </div>
           </Link>
         </div>
         <div className="col-md-3 col-sm-6">
@@ -112,7 +118,11 @@ const Accueil = () => {
             <div className="container text-center my-3">
               <div className="row  justify-content-center">
                 {/* carroussel */}
-                <Carousel showDots={true} responsive={responsive} className="pb-5">
+                <Carousel
+                  showDots={true}
+                  responsive={responsive}
+                  className="pb-5"
+                >
                   {product}
                 </Carousel>
               </div>
@@ -121,7 +131,6 @@ const Accueil = () => {
         </div>
       </div>
 
-
       <div>
         <ProdPopulaire />
       </div>
@@ -129,7 +138,16 @@ const Accueil = () => {
       <div className="testimonial pb-5 px-3">
         <h1 className="text-center mt-4">Ce que dises nos clients</h1>
         <div className="row">
-          <div className="col-md-4 mt-3">
+          {/* carroussel */}
+          <Carousel
+            showDots={true}
+            responsive={respTestimonial}
+            autoPlay={true}
+            className="pb-5"
+          >
+            {favoris}
+          </Carousel>
+          {/* <div className="col-md-4 mt-3">
             <div className="testi px-3 py-2 rounded">
               <img src={quote} alt="" />
               <p className="fs-5">
@@ -185,10 +203,9 @@ const Accueil = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-
     </div>
   );
 };

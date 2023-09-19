@@ -17,6 +17,8 @@ import Compte from './Components/Compteuser/Compte/Compte';
 import Commande from './Components/Compteuser/Comande/Commande';
 import MonPanier from './Components/Compteuser/MonPanier/MonPanier';
 import Favoris from './Components/Compteuser/Favoris/Favoris'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   return (
