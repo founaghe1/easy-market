@@ -18,3 +18,23 @@
         display: none !important ;
     }
 }
+
+@media only screen and (max-width: 888px) and (min-width: 601px)  {
+    .colonne{
+        display: flex;
+        justify-content: center;
+    }
+    .card-title{ 
+        font-size: 25px;
+    }
+    .card-text{
+        font-size: 25px;
+    }
+    .div-icon{
+        margin-top: -6%;
+        margin-left: 80%;
+    }
+    .myRow{
+        padding-left: 25px;
+    }
+}

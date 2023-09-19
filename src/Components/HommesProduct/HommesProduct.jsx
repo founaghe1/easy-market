@@ -28,10 +28,10 @@ const HommesProduct = () => {
       </p>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-2 sideb">
+          <div className="col-lg-2 sideb">
             <Sidebar />
           </div>
-          <div className="col-md-10  pt-5">
+          <div className="col-lg-10 col-md-12  pt-5">
             <p className="ps-2">
               {" "}
               <span className="spMan p-2">
@@ -41,7 +41,7 @@ const HommesProduct = () => {
               <span className="ps-2 homm">Hommes</span>{" "}
             </p>
              
-            <div className="row pe-5 justify-content-center align-items-center my-5 ">
+            <div className="row myRow pe-5 justify-content-center align-items-center my-5 ">
                     {prod.map((image) => (
                         <div className="colonne col-lg-3 col-md-6 col-sm-6">
                             <div className="card rounded-4 mb-3 w-100">
