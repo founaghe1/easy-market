@@ -40,7 +40,7 @@ const HommesProduct = () => {
               </span>{" "}
               <span className="ps-2 homm">Hommes</span>{" "}
             </p>
-            
+             
             <div className="row pe-5 justify-content-center align-items-center my-5 ">
                     {prod.map((image) => (
                         <div className="colonne col-lg-3 col-md-6 col-sm-6">
