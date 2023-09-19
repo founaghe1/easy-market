@@ -25,7 +25,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-4 pt-4 ps-md-5'>
+                    <div className='col-md-4 pt-4 ps-md-5 categorie'>
                         <div className='text-light text-sm-center text-md-start ps-md-5'>
                             <div className="titre">
                                 <h5 className=''>Nos catégories</h5>
@@ -39,7 +39,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className='col-md-4 pt-4 ps-md-5'>
+                    <div className='col-md-4 pt-4 ps-md-5 categorie'>
                         <div className='text-light text-sm-center text-md-start'>
                             <div className="titre">
                                 <h5 className=''>Assistance</h5>

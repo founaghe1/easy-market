@@ -6,7 +6,7 @@ import ceinture from "../Assets/ceinture.png";
 import montre from "../Assets/montre.png";
 import sac from "../Assets/sac.png";
 import shose2 from "../Assets/shose2.png";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
 
 export const prod = [
     {
@@ -68,3 +68,34 @@ export const prod = [
         icon: <AiOutlineHeart/>
     }
 ];
+
+export const favoirisImg = [
+    {
+        
+        img: shose1,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiFillHeart/>
+    },
+    {
+        img: montre,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiFillHeart/>
+    },
+    {
+        link: "produits/hommes/parfum1",
+        img: sac,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiFillHeart/>
+    },
+    {
+        link: "produits/hommes/sacFille",
+        img: shose2,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiFillHeart/>
+    }
+];
+
