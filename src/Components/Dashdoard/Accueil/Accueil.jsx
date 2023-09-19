@@ -49,7 +49,9 @@ const Accueil = () => {
         <div className="col-md-7">
           <div className="text-light ps-2 ps-md-5">
             <h1 className="display-3 fw-bold h1">
-              Votre site e-commerce{" "}
+              <span className="eCommerce">
+                Votre site e-commerce{" "}
+              </span>
               <span className="display-1 fw-bold">personnalisable</span>
             </h1>
             <p className="fw-bold fs-5 mt-3">
@@ -62,7 +64,7 @@ const Accueil = () => {
             </Link>
           </div>
         </div>
-        <div className="col-md-5 text-center">
+        <div className="col-md-5 text-center monPull">
           <img src={pull} alt="pull" className="pull" />
         </div>
       </div>

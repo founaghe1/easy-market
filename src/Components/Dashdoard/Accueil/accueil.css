@@ -28,7 +28,7 @@
 .section1{
   background-color: #cdcdcd0e !important;
   padding-bottom: 25px;
-  
+
 }
 .sect1Ico {
   width: 130px;
@@ -107,6 +107,13 @@
     position: relative;
     bottom: -150px;
     /* margin-right: 10px; */
+  }
+  .eCommerce{
+    font-size: 30px;
+  }
+  .monPull{
+    text-align: start !important;
+    padding-left: 20px !important;
   }
 }
 

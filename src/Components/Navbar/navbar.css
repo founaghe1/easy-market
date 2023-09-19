@@ -1,5 +1,6 @@
 .nav1{
     border-bottom: 2px solid rgba(128, 128, 128, 0.332) !important;
+    
 }
 
 /* searsh */
@@ -95,13 +96,18 @@
     color: rgba(255, 94, 0, 0.709);
   }
 
+  .linkNav{
+    color: #202124;
+  }
+
   @media  screen and (max-width: 520px) {
     .log img{
       font-size: 100px;
+      margin-left: 10px;
     }
     .recherche{
-      width: 50% !important;
-      margin-right: -20px;
+      width: 70% !important;
+      margin-right: -10px;
     }
     .logCherche{
       display: flex;
@@ -111,6 +117,15 @@
       display: flex;
       justify-content: space-around;
       padding-bottom: 10px;
+    }
+    .colHeader{
+      width: 50%;
+    }
+    .dispo,
+    .livraisonH,
+    .tel{
+      font-size: 12px;
+      padding-left: 25px;
     }
   }
   

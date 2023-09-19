@@ -13,7 +13,7 @@ const Navbar = () => {
     <div>
       <div className="container-fluid">
         <div className="row text-center pt-2 nav1">
-          <div className="col-lg-4 col-md-6 col-sm-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 colHeader dispo">
             <div>
               <p className="">
                 <GrDeliver className="me-2" />
@@ -21,14 +21,14 @@ const Navbar = () => {
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 col-sm-12">
+          <div className="col-lg-4 col-md-4 col-sm-6 colHeader livraisonH">
             <div>
               <p>
                 <GrDeliver className="me-2" /> <span className="fw-bold">Livraison en 24h</span>
               </p>
             </div>
           </div>
-          <div className="col-lg-4 col-md-12 col-sm-12">
+          <div className="col-lg-4 col-md-4 col-sm-12 tel">
             <div>
               <p>
                 <BsFillTelephoneFill className="me-2" />
@@ -86,17 +86,19 @@ const Navbar = () => {
             <div className="col-md-4 d-md-flex justify-content-md-start d-sm-flex justify-content-sm-around pt-3 pt-md-5 comptFavPani">
             <div className="pe-md-3 pt-1 ">
                 <div>
-                    <Link to="/compte" className='text-decoration-none link mb-0'>
+                    <Link to="/compte" className='text-decoration-none linkNav mb-0'>
                       <AiOutlineUser className="fs-3 me-1 ico"/>
                       <span className="fw-bold">Mon compte</span>
                     </Link>
                 </div>
             </div>
-            <div className="pe-md-3 pt-1">
-              <AiOutlineHeart className="fs-3 me-1 ico" />
-              <span className="fw-bold">Favoris</span>
-            </div>
-            <Link to="/mon-panier" className="link">
+            <Link to="/favoris" className="text-decoration-none linkNav">
+              <div className="pe-md-3 pt-1">
+                <AiOutlineHeart className="fs-3 me-1 ico" />
+                <span className="fw-bold">Favoris</span>
+              </div>
+            </Link>
+            <Link to="/mon-panier" className="linkNav text-decoration-none">
             <div className="pt-1">
                 <AiOutlineShoppingCart className="fs-3 me-1 ico"/>
                 <span className="fw-bold">Panier</span>
