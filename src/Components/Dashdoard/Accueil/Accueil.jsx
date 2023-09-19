@@ -105,7 +105,7 @@ const Accueil = () => {
       </div>
 
       <div class="container pt-5">
-        <h1 className="text-center">Nouveautés du moments</h1>
+        <h1 className="text-center">Nouveaux produits </h1>
         <br />
         <div className="row">
           <div className="col">

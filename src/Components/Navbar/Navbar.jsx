@@ -38,12 +38,16 @@ const Navbar = () => {
           </div>
         </div>
         <div className="row text-center">
-          <div className="col-md-2 pt-3">
-            <Link to="/">
-              <img src={logoNav} alt="" />
-            </Link>
-          </div>
-          <div className="col-md-6 pt-5 pb-2">
+          <div className="d-md-flex justify-content-md-between">
+
+          
+            <div className="col-md-8 d-sm-flex logCherche justify-content-sm-center justify-content-md-around  px-sm-5">
+            <div className="col-md-2 col-sm-6 pt-3 log">
+              <Link to="/">
+                <img src={logoNav} alt="" />
+              </Link>
+            </div>
+            <div className="col-md-6 col-sm-6 pt-5 pb-2 pe-sm-5  w-75 recherche">
             <div className="searchbar ">
               <div className="searchbar-wrapper ">
                 <div className="searchbar-left">
@@ -75,9 +79,12 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 d-md-flex justify-content-start pt-3 pt-md-5">
-            <div className="pe-md-3 pt-1">
+            </div>
+            </div>
+          
+          
+            <div className="col-md-4 d-md-flex justify-content-md-start d-sm-flex justify-content-sm-around pt-3 pt-md-5 comptFavPani">
+            <div className="pe-md-3 pt-1 ">
                 <div>
                     <Link to="/compte" className='text-decoration-none link mb-0'>
                       <AiOutlineUser className="fs-3 me-1 ico"/>
@@ -95,6 +102,7 @@ const Navbar = () => {
                 <span className="fw-bold">Panier</span>
               </div>
             </Link>
+            </div>
           </div>
         </div>
       </div>

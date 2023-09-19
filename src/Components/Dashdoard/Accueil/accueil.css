@@ -25,10 +25,16 @@
   width: 88%;
 }
 
+.section1{
+  background-color: #cdcdcd0e !important;
+  padding-bottom: 25px;
+  
+}
 .sect1Ico {
   width: 130px;
   height: 130px;
   border: 2px solid rgba(128, 128, 128, 0.537);
+  background-color: #ffffff;
 }
 
 
@@ -200,6 +206,3 @@
   height: 15px;
 }
 
-.react-multiple-carousel__arrow--left {
-  
-}

@@ -10,12 +10,12 @@ const ProdPopulaire = () => {
         <section className='proPopulaire'>
             <div className='container'>
                 <div className="div">
-                    <h1 className="text-center">Produits populaires</h1>
+                    <h1 className="text-center text-dark">Produits populaires</h1>
                 </div>
                 <div className="row justify-content-center align-items-center my-5">
                     {prod.map((image) => (
-                        <div className="col-lg-3 col-md-6 col-sm-12">
-                            <div className="card rounded-4 mb-3">
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="card rounded-4 mb-3 w-100">
                                 <div>
                                     <div className='div-image position-relative'>
                                         <img src={image.img} className="card-img-top" alt="image" />
