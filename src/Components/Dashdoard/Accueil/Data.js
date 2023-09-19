@@ -107,7 +107,7 @@ export const favorisData = [
     img: Client,
     userName: "Coper Toby",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati .",
     note: "4.1",
   },
   {
@@ -115,7 +115,7 @@ export const favorisData = [
     img: Client,
     userName: "Coper Toby",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati.",
     note: "4.1",
   },
   {
@@ -123,7 +123,7 @@ export const favorisData = [
     img: Client,
     userName: "Coper Toby",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati.",
     note: "4.1",
   },
   {
@@ -131,7 +131,7 @@ export const favorisData = [
     img: Client,
     userName: "Coper Toby",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati .",
     note: "4.1",
   },
   {
@@ -139,7 +139,7 @@ export const favorisData = [
     img: Client,
     userName: "Coper Toby",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati.",
     note: "4.1",
   },
   {
@@ -147,7 +147,7 @@ export const favorisData = [
     img: Client,
     userName: "Coper Toby",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati.",
     note: "4.1",
   },
   {
@@ -155,7 +155,7 @@ export const favorisData = [
     img: Client,
     userName: "Coper Toby",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti molestias vel eos laboriosam id, consectetur sit similique esse soluta odit eligendi iste.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati .",
     note: "4.1",
   },
 ];
