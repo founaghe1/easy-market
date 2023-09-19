@@ -3,6 +3,9 @@
     padding: 0;
     overflow-x: hidden;
 }
+.monRowOver{
+    overflow: hidden;
+}
 .man{
     color: rgb(255, 255, 255);
 }
