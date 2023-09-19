@@ -9,7 +9,14 @@
     }
 }
 @media only screen and (max-width: 600px) and (min-width: 320px)  {
-    .div h1{
+    .colonne{
+        display: flex;
+        justify-content: center;
+    }
+    .card-title{ 
+        font-size: 25px;
+    }
+    .card-text{
         font-size: 25px;
     }
     .div-icon{

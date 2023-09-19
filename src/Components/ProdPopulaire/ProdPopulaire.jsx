@@ -14,7 +14,7 @@ const ProdPopulaire = () => {
                 </div>
                 <div className="row justify-content-center align-items-center my-5">
                     {prod.map((image) => (
-                        <div className="col-lg-3 col-md-6 col-sm-6">
+                        <div className="colonne col-lg-3 col-md-6 col-sm-6">
                             <div className="card rounded-4 mb-3 w-100">
                                 <div>
                                     <div className='div-image position-relative'>
