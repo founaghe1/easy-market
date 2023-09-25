@@ -1,6 +1,5 @@
 import React from "react";
 import "./acueilparcour.css";
-// import Navbar from '../../Dashdoard/Navbar/Navbar';
 import chemise from "../../../Assets/chemise.png";
 import {
   AiOutlineStar,
@@ -9,16 +8,11 @@ import {
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import Productreutisable from "../../Productreutilisable/Productreutisable";
-// import Newletter from '../../Newsletter/Newletter';
-// import Footer from '../../Dashdoard/Footer/Footer';
 import { Link } from "react-router-dom";
 
 const Acueilparcour = () => {
   return (
     <div>
-      {/* <div className='shadow pb-3'>
-            <Navbar/>
-        </div> */}
       <p className="fil-arien text-start ps-5 pt-5">
         <Link to="/" className="text-decoration-none">
           <span className="chemin fw-bold pe-1">Accueil </span>
@@ -247,12 +241,6 @@ const Acueilparcour = () => {
             <Productreutisable />
           </div>
         </div>
-        {/* <div className=''>
-                <Newletter />
-            </div> */}
-        {/* <div>
-                <Footer />
-            </div> */}
       </div>
     </div>
   );

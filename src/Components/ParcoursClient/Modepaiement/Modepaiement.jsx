@@ -1,17 +1,11 @@
 import React from 'react';
 import './modepaiement.css';
-// import Navbar from '../../Dashdoard/Navbar/Navbar';
 import { Link } from 'react-router-dom';
-// import Newletter from '../../Newsletter/Newletter';
-// import Footer from '../../Dashdoard/Footer/Footer';
 
 
 const Modepaiement = () => {
   return (
     <div>
-      {/* <div className="shadow pb-3">
-        <Navbar />
-      </div> */}
       <p className='fil-arien text-start ps-5 pt-5'>
         <Link to='/produit' className='text-decoration-none'>
           <span className='chemin fw-bold pe-1'>Marketplace  </span>

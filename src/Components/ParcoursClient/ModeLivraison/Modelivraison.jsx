@@ -8,9 +8,6 @@ import { Link } from "react-router-dom";
 const Modelivraison = () => {
   return (
     <div>
-      {/* <div className="shadow pb-3">
-      <Navbar />
-    </div> */}
       <p className="fil-arien text-start ps-5 pt-5">
         <Link to="/produit" className="text-decoration-none">
           <span className="chemin fw-bold pe-1">Marketplace </span>
@@ -115,12 +112,6 @@ const Modelivraison = () => {
           </div>
         </div>
       </div>
-      {/* <div className='newL'>
-        <Newletter />
-      </div>
-      <div>
-        <Footer />
-      </div> */}
     </div>
   );
 };

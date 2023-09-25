@@ -12,6 +12,9 @@
     font-size: 18px;
     color: #2A2E34;
 }
+.overflow{
+    overflow-y: hidden !important;
+}
 
 @media screen and (max-width: 750px) {
     .sideba{

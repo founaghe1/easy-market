@@ -19,6 +19,7 @@ import MonPanier from './Components/Compteuser/MonPanier/MonPanier';
 import Favoris from './Components/Compteuser/Favoris/Favoris'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import Modevalidation from './Components/ParcoursClient/ModeValidation/Modevalidation';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
 
       {/* <Pageaccueil /> */}
       {/* <Navbar />
-      <Accueil />
+      <Accueil +++++++++++++++++++++/>
       <Footer /> */}
       {/* <Sidebar /> */}
       {/* <Produit /> */}
@@ -43,13 +44,14 @@ function App() {
             <Route path='/produit-homme' element={<HommesProduct />} />
             <Route exact path='/detail-produit'  element={<Acueilparcour />}></Route>
             <Route path="/mon-panier" element={<Monpanier />} />
-            <Route path="/informations-personnelles" element={<Infoclient />} />
+            {/* <Route path="/informations-personnelles" element={<Infoclient />} />
             <Route path="/mode-livraison" element={<Modelivraison />} />
-            <Route path="/mode-paiement" element={<Modepaiement />} />
+            <Route path="/mode-paiement" element={<Modepaiement />} /> */}
             <Route path='/compte' element={<Compte />} />
             <Route path='/commande' element={<Commande />} />
             <Route path='/panier' element={<MonPanier />} />
             <Route path='/favoris' element={<Favoris />} />
+            <Route path='/informations-personnelles' element={<Modevalidation />} />
           </Route>
         </Routes>
       </Router>
