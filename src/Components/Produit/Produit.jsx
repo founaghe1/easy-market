@@ -21,7 +21,6 @@ const Produit = () => {
           </div>
           <div className="col-md-10 ps-md-5">
             <Productreutisable />
-            {/* <Productreutisable /> */}
           </div>
         </div>
         

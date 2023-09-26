@@ -19,7 +19,7 @@ const Commande = () => {
           </div>
           <div className="col-lg-10 col-md-12 col-sm-12 d-flex flex-column justify-content-center">
             <div className="title">
-              <h1>Mes commandes</h1>
+              <h1 className="h1">Mes commandes</h1>
             </div>
             <div className="my-3">
               <div className="container my-3">

@@ -68,6 +68,38 @@ export const prod = [
         icon: <AiOutlineHeart/>
     }
 ];
+export const prods = [
+    {
+        link: "produits/hommes/parfumFemme",
+        img: shose1,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiOutlineHeart/>
+    },
+    {
+        link: "produits/parfum",
+        img: montre,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiOutlineHeart/>
+    },
+   
+    {
+        link: "produits/hommes/parfum1",
+        img: sac,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiOutlineHeart/>
+    },
+   
+    {
+        link: "produits/hommes/parfumFemme",
+        img: shose2,
+        title: "Cotton shirt regular fit",
+        texte: "150 000 fca",
+        icon: <AiOutlineHeart/>
+    }
+];
 
 export const favoirisImg = [
     {

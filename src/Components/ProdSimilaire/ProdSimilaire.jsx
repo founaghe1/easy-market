@@ -1,13 +1,12 @@
-import React from 'react';
-import './productreutisable.css'
-import { prod } from '../../Data/Data';
+import React from 'react'
+import { prods } from '../../Data/Data'
 
-const Productreutisable = () => {
+const ProdSimilaire = () => {
   return (
     <section>
       <div className="container">
         <div className="row pt-5 justify-content-center align-items-center ">
-          {prod.map((image) => (
+          {prods.map((image) => (
             <div className="col-lg-3 col-md-6 col-sm-12 mx-sm-auto text-sm-center ">
               <div className="card rounded-4 mb-3 w-100">
                 <div>
@@ -33,4 +32,4 @@ const Productreutisable = () => {
   )
 }
 
-export default Productreutisable
+export default ProdSimilaire

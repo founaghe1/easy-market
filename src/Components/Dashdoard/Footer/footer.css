@@ -56,7 +56,7 @@ h5{
     line-height: 20px;
     color: #fff;
 }
-@media only screen and (max-width: 600px) and (min-width: 320px)  {
+@media only screen and (max-width: 650px) and (min-width: 320px)  {
     .categorie{
         margin-left: 10%;
     }

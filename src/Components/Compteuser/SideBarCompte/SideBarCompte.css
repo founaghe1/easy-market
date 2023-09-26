@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Montserrat+Subrayada:wght@700&family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&family=Rubik:wght@500&family=Work+Sans&display=swap');
-.sidebars{
+
+.sidebars {
     border-right: 1px solid rgb(230, 227, 227);
     min-height: auto;
     background-color: white;
 }
+
 .ul {
     list-style: none;
     margin: 0;
     padding: 0;
 
 }
+.link{
+    width: 100%;
+    height: 100%;
+}
 
 .link:hover {
-    background: #f3a276 !important;
+    position: relative;
+    background: rgba(227, 111, 49, 0.08);
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 .compte {
@@ -30,7 +39,7 @@
     padding: 5px;
     cursor: pointer;
 } */
-.li:hover{
+.li:hover {
     background-color: #f3a27648;
 }
 
@@ -38,7 +47,8 @@
 .li:hover .ICON {
     color: #000;
 }
-.li{
+
+.li {
     padding-top: 10px;
 }
 
@@ -54,13 +64,15 @@
     text-align: center;
     color: #E20613;
 }
-@media only screen and (max-width: 768px) and (min-width: 601px)  {
-    .sidebars{
+
+@media only screen and (max-width: 768px) and (min-width: 651px) {
+    .sidebars {
         display: none;
-       }
+    }
 }
-@media only screen and (max-width: 600px) and (min-width: 320px)  {
-   .sidebars{
-    display: none;
-   }
+
+@media only screen and (max-width: 650px) and (min-width: 320px) {
+    .sidebars {
+        display: none;
+    }
 }

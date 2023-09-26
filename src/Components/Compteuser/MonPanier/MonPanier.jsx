@@ -16,7 +16,7 @@ const MonPanier = () => {
                     </div>
                     <div className="col-lg-10 col-md-12 col-sm-12 ">
                         <div className='title p-2'>
-                            <h1>Mon panier</h1>
+                            <h1 className='h1'>Mon panier</h1>
                         </div>
                         <TablePanier />
 

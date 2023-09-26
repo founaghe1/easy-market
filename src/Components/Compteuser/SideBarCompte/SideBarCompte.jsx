@@ -9,16 +9,16 @@ import { FaCartShopping } from "react-icons/fa6";
 const SideBarCompte = () => {
     return (
         <div className='sidebars'>
-            <div className='container-fluid'>
+            <div className='container-fluid w-100'>
                 <div className="row my-3">
                     <div className='col-md-12'>
 
                     
-                    <ul className='ul'>
+                    <ul className='ul w-100'>
                         <Link to="/compte" className="link text-decoration-none text-dark mb">
                             <li className='li  mb-1 d-flex align-items-center'>
                                 <p className='ps-3'>
-                                    <FaUserAlt className='ICON ' /> <span className='compte  ps-2'>Mon profil</span>
+                                    <FaUserAlt className='ICON ' /> <span className='compte ps-2'>Mon profil</span>
                                 </p>
                             </li>
                         </Link>

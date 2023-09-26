@@ -9,9 +9,7 @@ const ProdPopulaire = () => {
     return (
         <section className='proPopulaire'>
             <div className='container'>
-                <div className="div">
-                    <h1 className="text-center text-dark">Produits populaires</h1>
-                </div>
+                <h1 className="h1-title text-center">Produits populaires</h1>
                 <div className="row justify-content-center align-items-center my-5">
                     {prod.map((image) => (
                         <div className="colonne col-lg-3 col-md-6 col-sm-6">

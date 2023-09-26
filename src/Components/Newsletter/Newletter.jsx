@@ -8,8 +8,8 @@ const Newletter = () => {
         <div className="container py-5 ">
           <div className="row">
             <div className="col-md-4 ps-5 ">
-              <h2 className="ms-md-5 ps-md-5">NEWSLETTER</h2>
-              <p className="ms-md-5 ps-md-5">Stay Up to Date</p>
+              <h2 className="ms-md-5 ps-md-3">NEWSLETTER</h2>
+              <p className="ms-md-5 ps-md-3 newsletter-p">Stay Up to Date</p>
             </div>
             <div className="col-md-8">
               <div>

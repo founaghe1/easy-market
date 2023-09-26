@@ -13,13 +13,13 @@ const Compte = () => {
             
             <div className='container-fluid my-3 ps-md-5'>
                 <div className="row">
-                    <div className="col-md-2 ">
+                    <div className="col-lg-2 ">
                         <SideBarCompte />
                     </div>
 
                     <div className="col-lg-10 col-md-12 col-sm-12 d-flex flex-column">
                         <div className='title p-2'>
-                            <h1>Mon profil</h1>
+                            <h1 className='h1'>Mon profil</h1>
                         </div>
                         <div className="">
                             <Formulaire />

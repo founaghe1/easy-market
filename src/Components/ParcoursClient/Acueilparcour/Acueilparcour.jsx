@@ -7,8 +7,8 @@ import {
   AiOutlineHeart,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
-import Productreutisable from "../../Productreutilisable/Productreutisable";
 import { Link } from "react-router-dom";
+import ProdSimilaire from "../../ProdSimilaire/ProdSimilaire";
 
 const Acueilparcour = () => {
   return (
@@ -45,8 +45,9 @@ const Acueilparcour = () => {
               </p>
             </div>
           </div>
+
           <div className="col-md-6">
-            <h1 className="h1">Crown Summit Backpack</h1>
+            <h1 className="h1-span">Crown Summit Backpack</h1>
             <p className="marhom fs-4">Marque: Home </p>
             <p>
               <AiFillStar className="fs-2 start" />
@@ -62,9 +63,9 @@ const Acueilparcour = () => {
               provident qui, nostrum suscipit explicabo odio natus atque. Hic ad
               aut dolores esse reiciendis.
             </p>
-            <p className="price fw-bold my-5">200.000 FCFA</p>
+            <p className="price my-5">200.000 FCFA</p>
             <div className="d-flex">
-              <p className="fw-bold qte pe-5">Quantité</p>
+              <p className="qte pe-5">Quantité</p>
               <p className="fs-3">
                 <span className="">-</span>
                 <span className="px-4">2</span>
@@ -72,25 +73,31 @@ const Acueilparcour = () => {
               </p>
             </div>
             <div className="d-flex">
-              <p className="total pe-5 fw-bold">Total</p>
+              <p className="total pe-5 ">Total</p>
               <p className="priTotal ps-md-5 fw-bold">200.000 FCFA</p>
             </div>
-            <div className="butt d-md-flex">
-              <p>
-                <button className="btnFav px-5 py-2 fs-3 me-2">
-                  Favoris <AiOutlineHeart className="coeur" />
-                </button>
-              </p>
-              <p>
-                <Link to="/mon-panier">
-                  <button className="btnAjou px-4 text-light pt-3 pb-3 fw-bold">
-                    Ajouter au panier <AiOutlineShoppingCart className="fs-4" />
+            <div className="butt col-lg-10 col-md-12 col-sm-6 d-flex flex-lg-row flex-md-column flex-sm-column justify-content-center justify-content-md-center align-items-md-center">
+              <div className="">
+                <p>
+                  <button className="btnFav px-5 py-2 fs-3 me-2">
+                    Favoris <AiOutlineHeart className="coeur" />
                   </button>
-                </Link>
-              </p>
+                </p>
+              </div>
+
+              <div className="">
+                <p>
+                  <Link to="/mon-panier">
+                    <button className="btnAjou">
+                      Ajouter au panier <AiOutlineShoppingCart className="fs-4" />
+                    </button>
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>
+
 
         <p className="px-5 my-4">
           <hr />
@@ -98,12 +105,12 @@ const Acueilparcour = () => {
 
         <div className="row ps-4 pt-5">
           <div className="col-md-4">
-            <h3 className="mb-4 text-md-center">Avis des clients</h3>
+            <h1 className="h3 text-md-center">Avis des clients</h1>
             <p className="moyen text-md-center">NOTE MOYENNE</p>
             <div>
               <p className="text-md-center">
                 <span className="quatre fw-bold">4</span>
-                <span className="div">/</span>
+                <span className="cinq">/</span>
                 <span className="cinq">5</span>
               </p>
               <p className="etoile text-md-center">
@@ -119,24 +126,24 @@ const Acueilparcour = () => {
           <div className="col-md-4 pt-md-5">
             <div>
               <div className="d-flex align-items-center">
-                <p> 5 étoiles </p>
+                <p className="etoile mb-0">5 étoiles</p>
                 <p className="progres mx-3"></p>
-                <p>4</p>
+                <p className="etoile mb-0">4</p>
               </div>
               <div className="d-flex align-items-center">
-                <p> 5 étoiles </p>
+                <p className="etoile mb-0">5 étoiles</p>
                 <p className="progre mx-3"></p>
-                <p>4</p>
+                <p className="etoile mb-0">4</p>
               </div>
               <div className="d-flex align-items-center">
-                <p> 5 étoiles </p>
+                <p className="etoile mb-0">5 étoiles</p>
                 <p className="progre mx-3"></p>
-                <p>4</p>
+                <p className="etoile mb-0">4</p>
               </div>
               <div className="d-flex align-items-center">
-                <p> 5 étoiles </p>
+                <p className="etoile mb-0">5 étoiles</p>
                 <p className="progre mx-3"></p>
-                <p>4</p>
+                <p className="etoile mb-0">4</p>
               </div>
             </div>
           </div>
@@ -147,28 +154,28 @@ const Acueilparcour = () => {
         </p>
 
         <div className="row px-md-5">
-          <div className="table-container ">
+          <div className="table-container">
             <table className="table">
-              <thead className="thead">
+              <thead>
                 <tr>
-                  <th scope="col">AUTEUR</th>
-                  <th scope="col">NOTES</th>
-                  <th scope="col">MOTIF</th>
-                  <th scope="col">COMMENTAIRE</th>
+                  <th scope="col" className="text-primary">auteur</th>
+                  <th scope="col" className="text-primary">notes</th>
+                  <th scope="col" className="text-primary">motif</th>
+                  <th scope="col" className="text-primary">commentaire</th>
                 </tr>
               </thead>
               <tbody className="tbody">
                 <tr>
                   <th scope="row">
-                    <p>Anonyme A</p>
+                    <p className="anonyme">Anonyme A</p>
                     <p className="date">12 Décembre 2022</p>{" "}
                   </th>
                   <td>
                     <div>
                       <p className="text-md-center">
-                        <span className=" fw-bold">4</span>
-                        <span className="">/</span>
-                        <span className="">5</span>
+                      <span className="chiffre">4</span>
+                        <span className="chiffre">/</span>
+                        <span className="chiffre">5</span>
                       </p>
                       <p className="etoile text-md-center">
                         <AiFillStar className="start" />
@@ -180,29 +187,29 @@ const Acueilparcour = () => {
                     </div>
                   </td>
                   <td>
-                    <p>
+                    <p className="paragraphe">
                       Suite à une commande <br /> du 12 Décembre 2022
                     </p>
                   </td>
                   <td>
                     <p>
                       {" "}
-                      <span className="fw-bold">Bien</span> <br /> Le produit
-                      est parfait
+                      <span className="bien">Bien</span> <br /> <span className="produit">Le produit
+                      est parfait</span>
                     </p>
                   </td>
                 </tr>
                 <tr>
                   <th scope="row">
-                    <p>Anonyme A</p>
+                  <p className="anonyme">Anonyme A</p>
                     <p className="date">12 Décembre 2022</p>{" "}
                   </th>
                   <td>
                     <div>
                       <p className="text-md-center">
-                        <span className=" fw-bold">4</span>
-                        <span className="">/</span>
-                        <span className="">5</span>
+                        <span className="chiffre">4</span>
+                        <span className="chiffre">/</span>
+                        <span className="chiffre">5</span>
                       </p>
                       <p className="etoile text-md-center">
                         <AiFillStar className="start" />
@@ -214,15 +221,15 @@ const Acueilparcour = () => {
                     </div>
                   </td>
                   <td>
-                    <p>
+                    <p className="paragraphe">
                       Suite à une commande <br /> du 12 Décembre 2022
                     </p>
                   </td>
                   <td>
                     <p>
                       {" "}
-                      <span className="fw-bold">Bien</span> <br /> Le produit
-                      est parfait
+                      <span className="bien">Bien</span> <br /> <span className="produit">Le produit
+                      est parfait</span>
                     </p>
                   </td>
                 </tr>
@@ -237,8 +244,8 @@ const Acueilparcour = () => {
 
         <div className="row px-md-4">
           <div className="col-md-12">
-            <h3 className="ps-4">Produits similaires</h3>
-            <Productreutisable />
+            <h1 className="products ps-4">Produits similaires</h1>
+            <ProdSimilaire />
           </div>
         </div>
       </div>

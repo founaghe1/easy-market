@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.span-testimonials {
+    color: #151411;
+    font-size: 20px;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    line-height: 26px;
+    word-wrap: break-word
+}

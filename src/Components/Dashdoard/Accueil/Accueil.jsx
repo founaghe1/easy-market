@@ -51,20 +51,20 @@ const Accueil = () => {
 
   return (
     <div className="container-fluid princip">
-      <div className="row banner mt-2">
-        <div className="col-md-7">
+      <div className="row banner">
+        <div className="col-md-7 mb-5">
           <div className="text-light ps-2 ps-md-5">
             <h1 className="display-3 fw-bold h1">
               <span className="eCommerce">
                 Votre site e-commerce{" "}
               </span>
-              <span className="display-1 fw-bold">personnalisable</span>
+              <span className="personnalisable">personnalisable</span>
             </h1>
             <p className="fw-bold fs-5 mt-3">
               Vendez facilement vos meilleurs produits grâce à Easy Market
             </p>
             <Link to="/produit">
-              <button className="btn text-light mb-sm-2 py-3 px-5 fw-bold mt-3">
+              <button className="button text-white mb-sm-2 py-3 px-5 mt-3">
                 VOIR NOS PRODUITS
               </button>
             </Link>
@@ -112,96 +112,52 @@ const Accueil = () => {
         </div>
       </div>
 
-      <div class="container pt-5">
-        <h1 className="text-center">Nouveaux produits </h1>
-        <br />
-        <div className="row">
-          <div className="col">
-            <div className="container text-center my-3">
-              <div className="row  justify-content-center">
-                {/* carroussel */}
-                <Carousel showDots={true} autoPlay={true} responsive={responsive} className="pb-5">
-                  {product}
-                </Carousel>
+      <section className="bg-white">
+        <div class="container pt-5">
+          <h1 className="h1-title text-center">Nouveaux produits</h1>
+          <br />
+          <div className="row">
+            <div className="col">
+              <div className="container text-center my-3">
+                <div className="row  justify-content-center">
+                  {/* carroussel */}
+                  <Carousel showDots={true} autoPlay={true} responsive={responsive} className="pb-5">
+                    {product}
+                  </Carousel>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div>
+          <ProdPopulaire />
+        </div>
+        <div className="container-fluid bg-white">
+        <div className="row">
+          <div className="col-12">
+            <h1 className="title text-center mt-4">Ce que dises nos clients</h1>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <ProdPopulaire />
-      </div>
+      </section>
 
       <div className="testimonial pb-5 px-3">
-        <h1 className="text-center mt-4">Ce que dises nos clients</h1>
-        <div className="row">
-          {/* carroussel */}
-          <Carousel
-            showDots={true}
-            responsive={respTestimonial}
-            autoPlay={true}
-            className="pb-5"
-          >
-            {favoris}
-          </Carousel>
-          {/* <div className="col-md-4 mt-3">
-            <div className="testi px-3 py-2 rounded">
-              <img src={quote} alt="" />
-              <p className="fs-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati deleniti molestias vel eos laboriosam id, consectetur
-                sit similique esse soluta odit eligendi iste.
-              </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <p>
-                  <img src={client} alt="" />
-                  <span className="ms-2 fw-bold fs-5">Coper Toby</span>
-                </p>
-                <p className="d-flex justify-content-between align-items-center">
-                  <AiFillStar className="stoile fs-2"/> <span className="fw-bold fs-5">4.1</span>
-                </p>
-              </div>
-            </div>
+        <div className="container">
+          <div className="row">
+            {/* carroussel */}
+            <Carousel
+              showDots={true}
+              responsive={respTestimonial}
+              autoPlay={true}
+              className="pb-5"
+            >
+              {favoris}
+            </Carousel>
+
           </div>
-          <div className="col-md-4 mt-3">
-            <div className="testi px-3 py-2 rounded">
-              <img src={quote} alt="" />
-              <p className="fs-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati deleniti molestias vel eos laboriosam id, consectetur
-                sit similique esse soluta odit eligendi iste.
-              </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <p>
-                  <img src={client} alt="" />
-                  <span className="ms-2 fw-bold fs-5">Coper Toby</span>
-                </p>
-                <p className="d-flex justify-content-between align-items-center">
-                  <AiFillStar className="stoile fs-2"/> <span className="fw-bold fs-5">4.3</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mt-3 shadow">
-            <div className="testi px-3 py-2 rounded">
-              <img src={quote} alt="" />
-              <p className="fs-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati deleniti molestias vel eos laboriosam id, consectetur
-                sit similique esse soluta odit eligendi iste.
-              </p>
-              <div className="d-flex justify-content-between align-items-center">
-                <p>
-                  <img src={client} alt="" />
-                  <span className="ms-2 fw-bold fs-5">Coper Toby</span>
-                </p>
-                <p className="d-flex justify-content-between align-items-center">
-                  <AiFillStar className="stoile fs-2"/> <span className="fw-bold fs-5">4.5</span>
-                </p>
-              </div>
-            </div>
-          </div> */}
+
         </div>
       </div>
     </div>

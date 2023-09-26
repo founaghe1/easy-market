@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;1,300&family=Montserrat+Subrayada:wght@700&family=Montserrat:ital,wght@1,300&family=Open+Sans&family=Raleway:wght@600&family=Roboto:wght@500&family=Rubik:wght@500&family=Work+Sans&display=swap');
 .nav1{
-    border-bottom: 2px solid rgba(128, 128, 128, 0.332) !important;
-    
+    border-bottom: 2px solid rgba(128, 128, 128, 0.332) !important; 
 }
 
 /* searsh */
@@ -99,8 +99,29 @@
   .linkNav{
     color: #202124;
   }
-
-  @media  screen and (max-width: 520px) {
+  .span-nav{
+    font-family: "Rubik" sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30.19px;
+  }
+.icon-text{
+  font-family: "Roboto" sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+@media only screen and (max-width: 768px) and (min-width: 651px)  {
+  #favPan{
+    margin-right: 50%;
+  }
+  .icon-text{
+    font-size: 11px;
+   
+  }
+}
+  @media  screen and (max-width: 650px) and (min-width: 320px) {
     .log img{
       font-size: 100px;
       margin-left: 10px;
@@ -118,14 +139,11 @@
       justify-content: space-around;
       padding-bottom: 10px;
     }
+    .nav1{
+      display: none; 
+  }
     .colHeader{
-      width: 50%;
-    }
-    .dispo,
-    .livraisonH,
-    .tel{
-      font-size: 12px;
-      padding-left: 25px;
+      display: none;
     }
   }
   
