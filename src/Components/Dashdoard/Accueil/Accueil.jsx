@@ -120,7 +120,7 @@ const Accueil = () => {
             <div className="container text-center my-3">
               <div className="row  justify-content-center">
                 {/* carroussel */}
-                <Carousel showDots={true} autoPlay={true} responsive={responsive} className="pb-5">
+                <Carousel showDots={true} autoPlay infinite responsive={responsive} className="pb-5">
                   {product}
                 </Carousel>
               </div>
@@ -140,7 +140,8 @@ const Accueil = () => {
           <Carousel
             showDots={true}
             responsive={respTestimonial}
-            autoPlay={true}
+            autoPlay
+            infinite
             className="pb-5"
           >
             {favoris}

@@ -1,20 +1,99 @@
-.ul{
-    width: 75% ;
+.ul {
+    width: 75%;
 }
 
-.active{
+.active {
     background-color: rgb(236, 74, 5) !important;
     color: white;
 }
 
-.inactive{
+.inactive {
     background-color: rgb(164, 162, 161) !important;
     color: white;
 }
 
 
-@media screen  and (max-width: 822px) {
-    .ul{
-        width: 100% ;
+@media screen and (max-width: 822px) {
+    .ul {
+        width: 100%;
+    }
+    
+}
+
+.nav-item .timline1page2 {
+    content: '';
+    width: 3%;
+    /* height: 2px !important; */
+    background-color: #f07203;
+    position: absolute;
+    top: 39.3%;
+    left: 7%;
+    z-index: -1;
+}
+
+.nav-item .timline1page3 {
+    content: '';
+    width: 5.8%;
+    /* height: 2px !important; */
+    background-color: #f07203;
+    position: absolute;
+    top: 39.3%;
+    left: 3%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 769px) {
+    .timline1page2 {
+        content: '';
+        width: 8% !important;
+        /* height: 2px !important; */
+        background-color: #f07203 !important;
+        position: absolute !important;
+        top: 46.5% !important;
+        left: 3% !important;
+        z-index: -1 !important;
+    }
+    .nav-item .timline1page3 {
+        content: '';
+        width: 15% !important;
+        /* height: 2px !important; */
+        background-color: #f07203;
+        position: absolute;
+        top: 46.5% !important;
+        left: -6%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .timline1page2 {
+        top: 35% !important;
+    }
+    .nav-item .timline1page3 {
+        top: 35% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-item .timline1page2 {
+        content: '';
+        width: 3%;
+        /* height: 2px !important; */
+        background-color: #f07203;
+        position: absolute;
+        top: 28% !important;
+        left: 7%;
+        z-index: -1;
+    }
+    
+    .nav-item .timline1page3 {
+        content: '';
+        width: 5.8%;
+        /* height: 2px !important; */
+        background-color: #f07203;
+        position: absolute;
+        top: 28% !important;
+        left: 3%;
+        z-index: -1;
     }
 }

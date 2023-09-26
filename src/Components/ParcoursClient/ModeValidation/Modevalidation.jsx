@@ -33,6 +33,8 @@ const Modevalidation = () => {
             <p>Information personnelles</p>
           </li>
           <li className={`nav-item`}>
+            {currentPage === 2 && (
+            <span className="timline1page2"></span>)}
             <button className={`nav-link  rounded-circle ${currentPage >= 2 ? "active" : "inactive"}`} type="button">
               2
             </button>
@@ -40,6 +42,8 @@ const Modevalidation = () => {
           </li>
 
           <li className={`nav-item`}>
+            {currentPage === 3 && (
+            <span className="timline1page3"></span>)}
             <button className={`nav-link rounded-circle ${currentPage > 2 ? "active" : "inactive"}`} type="button">
               3
             </button>
