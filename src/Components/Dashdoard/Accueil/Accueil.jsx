@@ -26,9 +26,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Product from "./Product";
 import { favorisData, productData, responsive, respTestimonial } from "./Data";
-import { AiFillStar } from "react-icons/ai";
 import ProdPopulaire from "../../ProdPopulaire/ProdPopulaire";
 import Testimonials from "../Testimonials/Testimonials";
+
+import BoutonHome from "./BoutonHome";
+import { service } from "../../../Data/Data";
 
 const Accueil = () => {
   const product = productData.map((item) => (
@@ -60,13 +62,11 @@ const Accueil = () => {
               </span>
               <span className="personnalisable">personnalisable</span>
             </h1>
-            <p className="fw-bold fs-5 mt-3">
+            <p className="p-banner mt-3">
               Vendez facilement vos meilleurs produits grâce à Easy Market
             </p>
             <Link to="/produit">
-              <button className="button text-white mb-sm-2 py-3 px-5 mt-3">
-                VOIR NOS PRODUITS
-              </button>
+              <BoutonHome />
             </Link>
           </div>
         </div>
@@ -75,41 +75,20 @@ const Accueil = () => {
         </div>
       </div>
       <div className="row section1 text-center pt-5">
-        <div className="col-md-3 col-sm-6 ">
-          <Link to="/produit-homme" className="link">
-            <div className="d-flex flex-column justify-content-center align-items-center">
-              <p className="fs-4">Hommes</p>
-              <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
-                <IoIosMan className="display-1 ico icoSect1" />
-              </p>
-            </div>
-          </Link>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <p className="fs-4">Femmes</p>
-            <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
-              <ImWoman className="display-1 ico icoSect1" />
-            </p>
+        {service.map((service) => (
+          <div className="col-lg-3 col-md-6 col-sm-12">
+            <Link to={service.lien} className="link">
+              <div className="d-flex flex-column justify-content-center align-items-center">
+                <p className="fs-4">{service.texte}</p>
+                <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
+                  <span className="display-1 ico icoSect1">{service.iconService}</span>
+                </p>
+              </div>
+
+            </Link>
           </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <p className="fs-4">Enfants</p>
-            <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
-              <BiChild className="display-1 ico icoSect1" />
-            </p>
-          </div>
-        </div>
-        <div className="col-md-3 col-sm-6">
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <p className="fs-4">Equipement</p>
-            <p className="sect1Ico rounded-circle d-flex flex-column justify-content-center align-items-center">
-              {" "}
-              <PiWatchDuotone className="display-1 ico icoSect1" />{" "}
-            </p>
-          </div>
-        </div>
+        ))}
+
       </div>
 
       <section className="bg-white">
@@ -134,12 +113,12 @@ const Accueil = () => {
           <ProdPopulaire />
         </div>
         <div className="container-fluid bg-white">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="title text-center mt-4">Ce que dises nos clients</h1>
+          <div className="row">
+            <div className="col-12">
+              <h1 className="title text-center mt-4">Ce que dises nos clients</h1>
+            </div>
           </div>
         </div>
-      </div>
 
       </section>
 

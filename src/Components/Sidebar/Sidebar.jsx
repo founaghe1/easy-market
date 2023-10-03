@@ -5,9 +5,8 @@ const Sidebar = () => {
   return (
     <div className='sidebar pb-3'>
         <div className='ps-1'>
-            
             <div className='categories'>
-                <p className='fs-4 pCateg'>Catégories </p>
+                <p className='pCateg'>Catégories </p>
                 <div className='pb-2'>
                     <input type="checkbox" name="checkbox" id="checkbox" className='me-3' />
                     <label for="checkbox">Gants</label><br/>

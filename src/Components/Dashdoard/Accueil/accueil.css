@@ -23,6 +23,13 @@
   line-height: 94.70px;
   word-wrap: break-word;
 }
+.p-banner{
+  color: white;
+font-size: 18px;
+font-family: "Inter" sans-serif;
+font-weight: 400;
+word-wrap: break-word
+}
 
 .button {
   width: 300px;

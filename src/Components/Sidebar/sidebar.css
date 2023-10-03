@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300&display=swap');
 
-.sidebar{
-    
+.sidebar {
+
     width: 220px;
     height: 100%;
     margin-top: 50px;
@@ -10,20 +10,29 @@
 
 .pCateg,
 .pMark,
-.pPrix{
-    font-family: Raleway;
+.pPrix {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 20px;
+    font-family: 'Raleway' sans-serif;
+    font-weight: 300;
+    word-wrap: break-word
 }
-label{
-    font-family: Raleway;
-    font-weight:600;
+
+.label {
+    font-family: 'Raleway' sans-serif;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 16px;
+    font-weight: 500;
+    word-wrap: break-word
 }
+
 .progress {
     height: 5px;
     background-color: #9c0707;
     border-radius: 4px;
     margin: 20px 0;
 }
-  
+
 .progress-bar {
     width: 0;
     height: 50%;
@@ -34,9 +43,8 @@ label{
     color: white;
 }
 
-.prixbtn{
+.prixbtn {
     border: 1px solid grey;
-    border-radius: 3rem !important ;
+    border-radius: 3rem !important;
 
 }
-  

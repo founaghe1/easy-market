@@ -24,18 +24,6 @@ import Modevalidation from './Components/ParcoursClient/ModeValidation/Modevalid
 function App() {
   return (
     <div className="">
-
-      {/* <Pageaccueil /> */}
-      {/* <Navbar />
-      <Accueil +++++++++++++++++++++/>
-      <Footer /> */}
-      {/* <Sidebar /> */}
-      {/* <Produit /> */}
-      {/* <HommesProduct /> */}
-      {/* <Acueilparcour /> */}
-
-
-
       <Router>
         <Routes>
           <Route path="/"  element={<Layout />}>
@@ -44,9 +32,6 @@ function App() {
             <Route path='/produit-homme' element={<HommesProduct />} />
             <Route exact path='/detail-produit'  element={<Acueilparcour />}></Route>
             <Route path="/mon-panier" element={<Monpanier />} />
-            {/* <Route path="/informations-personnelles" element={<Infoclient />} />
-            <Route path="/mode-livraison" element={<Modelivraison />} />
-            <Route path="/mode-paiement" element={<Modepaiement />} /> */}
             <Route path='/compte' element={<Compte />} />
             <Route path='/commande' element={<Commande />} />
             <Route path='/panier' element={<MonPanier />} />
@@ -60,4 +45,3 @@ function App() {
 }
 
 export default App;
-

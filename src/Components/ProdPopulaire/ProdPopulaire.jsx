@@ -3,7 +3,7 @@ import './ProdPopulaire.css';
 import './media-querrie-prod.css';
 import { Link } from "react-router-dom";
 import { prod } from '../../Data/Data';
-import BoutonBlanc from '../BoutonBlanc/BoutonBlanc';
+import BoutonBlanc from '../Boutouns/BoutonBlanc/BoutonBlanc';
 
 const ProdPopulaire = () => {
     return (
@@ -28,7 +28,6 @@ const ProdPopulaire = () => {
                                 </div>
                             </div>
                         </div>
-
                     ))}
                     <div className='col-12 text-end'>
                         <BoutonBlanc />
